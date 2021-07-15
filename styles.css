@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+*{
+  padding: 0;
+}
+nav{
+  font-family: 'Oswald', sans-serif;
+}
+
+.navbar{
+  background-color: #204469;
+  z-index: 1000;
+}
+.avatar{
+  height: 50px;
+  width: 50px;
+  border-radius: 15px;
+}
+
+.text-left{
+  right: 0;
+  left: auto;
+  padding-left: 1px;
+  padding-right: 1px;
+}
+
+.navbar-toggler-icon{
+  border-color: blue;
+}
+
+.back-video{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.back-video video{
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.mid-content{
+  position: relative;
+}
+
+.back-video .mid-content p{
+  font-size: 1.5rem;
+}
+
+.mid-content h2{
+  font-size: 4rem;
+}
+
+.back-video .mid-content a{
+  color: white;
+  font-size: 1.7rem;
+  border-radius: .5rem;
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid #fff;
+  transition: font-size 0.5s;
+}
+
+.back-video .mid-content a:hover{
+  background-color: #fff;
+  color: black;
+  font-size: 2.5rem;
+}
