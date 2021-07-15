@@ -76,3 +76,87 @@ nav{
   color: black;
   font-size: 2.5rem;
 }
+
+.about{
+  background-color: #fff;
+}
+
+.about .container{
+  margin: 0px;
+  padding: 50px 0px 50px 0px;
+  border: 2px ridge;
+  min-height: 400px;
+  -webkit-box-shadow: 0 10px 10px -10px #000000;
+  -moz-box-shadow: 0 10px 10px -10px #000000;
+  box-shadow: 0 10px 10px -10px #000000;
+
+}
+.about .text{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: auto;
+}
+
+.about .text h3{
+  color: #204469;
+  font-weight: 800;
+  font-size: 3rem;
+  letter-spacing: 2px;  
+}
+
+.about .text p{
+  color: #000;
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+
+.about .text a{
+  color: #204469;
+  font-size: 1.7rem;
+  border-radius: .5rem;
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid #204469;
+  transition: font-size 0.5s;
+}
+
+.about .text a:hover{
+  font-size: 1.9rem;
+}
+
+.about .card{
+  border: 2px #204469 solid;
+  min-height: 400px;
+  -webkit-box-shadow: 0 10px 10px -10px #000000;
+  -moz-box-shadow: 0 10px 10px -10px #000000;
+  box-shadow: 0 10px 10px -10px #000000;
+}
+
+.about .card:hover{
+  transform: translateY(-5px);
+}
+
+.card-body{
+  height: 10%;
+}
+body > section.about.p-2 > div > div > div:nth-child(n) > div > a{
+  color: #fff;
+  background-color: #204469;
+  -webkit-box-shadow: 0 10px 10px -10px #000000;
+  -moz-box-shadow: 0 10px 10px -10px #000000;
+  box-shadow: 0 10px 10px -10px #000000;
+}
+
+
+.testimonial-group > .horizo-scroll {
+  overflow-x: auto;
+  white-space: nowrap;
+  display: block;
+  padding: 2rem;
+}
+.testimonial-group > .horizo-scroll > .cardDiv{
+  display: inline-block;
+  float: none;
+}
