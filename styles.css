@@ -122,6 +122,7 @@ nav{
   transition: font-size 0.5s;
 }
 
+
 .about .text a:hover{
   font-size: 1.9rem;
 }
@@ -138,9 +139,19 @@ nav{
   transform: translateY(-5px);
 }
 
-.card-body{
-  height: 10%;
+.about .card .new-strategy h4{
+  font-size: 1rem;
+  font-weight: 700;
 }
+
+.about .card .card-body a{
+  background-color: #204469;
+}
+
+.about .card{
+  min-height: 10%;
+}
+
 body > section.about.p-2 > div > div > div:nth-child(n) > div > a{
   color: #fff;
   background-color: #204469;
@@ -159,4 +170,29 @@ body > section.about.p-2 > div > div > div:nth-child(n) > div > a{
 .testimonial-group > .horizo-scroll > .cardDiv{
   display: inline-block;
   float: none;
+}
+
+footer .row{
+  background-color: #204469;
+}
+
+footer .row h3{
+  font-family: 'Oswald', sans-serif;
+  color: white;
+  font-size: 1rem;
+}
+
+.contact-us, .row-content{
+  -webkit-box-shadow: 0 10px 10px -10px #000000;
+  -moz-box-shadow: 0 10px 10px -10px #000000;
+  box-shadow: 0 10px 10px -10px #000000;
+}
+
+.text-color{
+  color: #204469;
+  font-family: 'Oswald', sans-serif;
+}
+
+.body > div > div > div.col-12.col-md-9 > form > div:nth-child(7) > div > button{
+  background-color: #204469;
 }
