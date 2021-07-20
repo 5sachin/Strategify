@@ -1,3 +1,5 @@
+
+
 body > section{
     margin-top: 10%;
 }
@@ -15,3 +17,18 @@ body > section > div > div.col-12.col-md-9 > form > div:nth-child(4) > div > inp
     color: white;
 }
 
+body > section > div > div.col-12.col-md-3 > h3{
+    color: #224069;
+}
+
+body > section > div > div.col-12.col-md-3 > input{
+    background-color: #220469;
+    color: white;
+}
+
+body > section > div > div.col-12.col-md-3 > h3{
+    color: #224069;
+    font-family: 'Tourney', cursive;
+    margin-top: 0;
+
+}
