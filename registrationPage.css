@@ -1,0 +1,17 @@
+body > section{
+    margin-top: 10%;
+}
+
+body > section > .container{
+    border-radius: 25px;
+} 
+
+body > section > div > div.col-12.col-md-9 > form > div:nth-child(1) > div:nth-child(n) > input{
+    color: #204469;
+}
+
+body > section > div > div.col-12.col-md-9 > form > div:nth-child(4) > div > input{
+    background-color: #204469;
+    color: white;
+}
+
