@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./././node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./././node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="././node_modules/bootstrap-social/bootstrap-social.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./createStrategy.css">
+	<title>Strateigfy</title>
+</head>
+<body>
+	<header class="page-head">
+        <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
+            <a href="#" class="navbar-brand">Strateigfy</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contactus.html" class="nav-link">Contact Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <img src="img_avatar.png" class="avatar dropdown-toggle" role="button" data-toggle="dropdown" id="navbarDropdown"  aria-expanded="false">
+                        <div class="dropdown-menu text-left" aria-labelledby="navbarDropdown"> 
+                            <a href="index.html" class="dropdown-item text-dark">Logout</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="section-75 section-md-120 section-lg-120 section-xl-150 mt-5">
+        <div class="shell">
+            <div class="range">
+                <form class="p-5">
+                    <div class="form-group row">
+                        <div class="col-md-4 col-12">
+                            <input type="text" name="StrategyName" class="font-weight-bold form-control" placeholder="Strategy Name">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-12 col-12">
+                            <label class="h4 font-weight-bold">Entry:</label>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-4 col-12 ">
+                            <input type="text" class="font-weight-bold form-control" name="buysellEntry" placeholder="Buy/Sell">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-4 col-12 ">
+                            <input type="text" class="font-weight-bold form-control" name="indicatorpriceEntry" placeholder="Indicator/Price">
+                        </div>
+                        <div class="col-md-4 col-12 ">
+                            <input type="text" class="font-weight-bold form-control" name="conditionEntry" placeholder="Condition">
+                        </div>
+                        <div class="col-md-4 col-12">
+                            <div class="row">
+                                <div class="col-8 IndicatorEntry">
+                                    <input type="text" class="font-weight-bold form-control" name="conditionEntry2" placeholder="Indicator Price">
+                                </div>
+                                <div class="col-4">
+                                    <button href="#" class="btn addIndicator fa fa-plus"/>
+                                </div>
+                            </div>     
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-12 col-12">
+                            <label class="h4 font-weight-bold">Exit:</label>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-4 col-12">
+                            <input type="text" class="font-weight-bold form-control" name="buysllExit" placeholder="Buy/Sell">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-4 col-12">
+                            <input type="text" class="font-weight-bold form-control" name="indicatorpriceExit" placeholder="Indicator/Price">
+
+                        </div>
+                        <div class="col-md-4 col-12">
+                            <input type="text" class="font-weight-bold form-control" name="conditionExit" placeholder="Condition">
+                        </div>
+                        <div class="col-md-4 col-12">
+                            <div class="row">
+                                <div class="col-8 IndicatorEntry2">
+                                    <input type="text" class="font-weight-bold form-control" name="conditionExit2" placeholder="Indicator Price">
+                                </div>
+                                <div class="col-4">
+                                    <button href="#" class="btn addIndicator2 fa fa-plus"/>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-4 col-12">
+                            <input type="text" class="font-weight-bold form-control" name="targetExit" placeholder="Target %">
+                        </div>
+                        <div class="col-md-4 col-12">
+                            <input type="text" class="font-weight-bold form-control" name="slExit" placeholder="SL %">
+                        </div>
+                        <div class="col-md-4 col-12">
+                            <input type="text" class="font-weight-bold form-control" name="OHCL" placeholder="O,H,C,L">
+                        </div>
+                    </div>
+                    <div class="form-group row text-center">
+                        <div class="col-12 align-content-center text-center p-1">
+                            <input type="button" class="btn btn-primary" name="indicatorprice" value="Save">
+                            <input type="button" class="btn btn-success" name="condition" value="Run">
+                            <input type="button" class="btn btn-danger" name="condition" value="Cancel">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    
+
+
+
+    <footer class="container-fluid fixed-bottom">
+        <div class="row p-2">
+            <div class="col-12 text-center p-2 m-auto">
+                <h3>&copy Copyright: Strategify.</h3>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./script.js"></script>
+
+</body>
+</html>
