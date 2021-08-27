@@ -16,22 +16,27 @@
     
 <body>
 
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <header class="page-head">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top">
             <a href="#" class="navbar-brand">Strateigfy</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a href="#" class="nav-link">Home <span class="sr-only">(current)</span></a>
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link">About Us</a>
                     </li>
                     <li class="nav-item">
                         <a href="contactus.html" class="nav-link">Contact Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <div class="dropdown-menu text-left" aria-labelledby="navbarDropdown"> 
+                            <a href="index.html" class="dropdown-item text-dark">Logout</a>
+                        </div>
                     </li>
                     <li class="nav-item">
                         <a href="#"  data-toggle="modal" data-target="#LoginModal"  class="nav-link">Log In</a>
@@ -47,7 +52,6 @@
                 </ul>
             </div>
         </nav>
-
 
         <div class="modal fade" id="LoginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
@@ -94,71 +98,80 @@
         </div>
     </header>
 
-
-    <section class="about py-5">
-        <div class="row align-items-center container my-5 mx-auto" data-aos="zoom-in">
-            <div class="text col-12 col-lg-6 col-md-6 w-50 pt-5 pb-5">
-                <h3>Strategy</h3>
-                <p>Unlimited testing and deployment of strategy. Variety of indicators.</p>
-                <a href="#" class="btn">Learn More</a>
-            </div>
-            <div class="img col-12 col-lg-6 col-md-6 w-50 d-sm-none d-md-block d-none d-sm-block">
-                <img class="img-fluid" src="1secondrow.png">
+    <div class="container-fluid">
+        <div class="section-25 section-md-55 section-lg-75 section-xl-75 mt-5">
+            <div class="shell">
+                <div class="range">
+                    <div class="row rows">
+                        <div class="text col-12 col-lg-6 col-md-6 w-50 pt-2">
+                            <h3>Strategy</h3>
+                            <p>Unlimited testing and deployment of strategy. Variety of indicators.</p>
+                            <a href="#" class="btn">Learn More</a>
+                        </div>
+                        <div class="img col-12 col-lg-6 col-md-6 w-50 d-sm-none d-md-block d-none d-sm-block">
+                            <img class="img-fluid" src="1secondrow.png">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
 
-    <section class="about p-2 pb-5">
-        <div class="row align-items-center container mx-auto p-3 testimonial-group">
-            <div class="card-deck horizo-scroll">
-                <div class="cardDiv col-12 col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                    <div class="card" data-aos="zoom-in">
-                        <img class="card-img-top img-fluid " src="cardHeadImg.jpg" alt="Card image cap">
-                        <div class="card-body text-center">
-                            <h4 class="card-title font-weight-bold">MACD</h4>
-                            <a href="#" class="btn btn-primary">Run</a>
+        <div class="section-25 section-md-55 section-lg-75 section-xl-75 mt-5">
+            <div class="shell">
+                <div class="range">
+                    <div class="row rows align-items-center testimonial-group">
+                        <div class="card-deck horizo-scroll">
+                            <div class="cardDiv col-12 col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                                <div class="card" data-aos="zoom-in">
+                                    <img class="card-img-top img-fluid " src="cardHeadImg.jpg" alt="Card image cap">
+                                    <div class="card-body text-center">
+                                        <h4 class="card-title font-weight-bold">MACD</h4>
+                                        <a href="#" class="btn btn-primary">Run</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cardDiv col-12 col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                                <div class="card" data-aos="zoom-in">
+                                    <img class="card-img-top img-fluid " src="cardHeadImg.jpg" alt="Card image cap">
+                                    <div class="card-body text-center">
+                                        <h4 class="card-title font-weight-bold">MACD</h4>
+                                        <a href="#" class="btn btn-primary">Run</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cardDiv col-12 col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                                <div class="card" data-aos="zoom-in">
+                                    <img class="card-img-top img-fluid " src="cardHeadImg.jpg" alt="Card image cap">
+                                    <div class="card-body text-center">
+                                        <h4 class="card-title font-weight-bold">MACD</h4>
+                                        <a href="#" class="btn btn-primary">Run</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cardDiv col-12 col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                                <div class="card" data-aos="zoom-in">
+                                    <img class="card-img-top img-fluid " src="cardHeadImg.jpg" alt="Card image cap">
+                                    <div class="card-body text-center">
+                                        <h4 class="card-title font-weight-bold">MACD</h4>
+                                        <a href="#" class="btn btn-primary">Run</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cardDiv col-12 col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                                <div class="card" data-aos="zoom-in">
+                                    <img class="card-img-top img-fluid m-auto" src="plusIcon.png" alt="Card image cap">
+                                    <div class="card-body text-center new-strategy">
+                                        <h4 class="card-title font-weight-bold">NEW STRATEGY</h4>
+                                        <a href="createStrategy.html" class="btn btn-primary">CREATE</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="cardDiv col-12 col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                    <div class="card" data-aos="zoom-in">
-                        <img class="card-img-top img-fluid " src="cardHeadImg.jpg" alt="Card image cap">
-                        <div class="card-body text-center">
-                            <h4 class="card-title font-weight-bold">MACD</h4>
-                            <a href="#" class="btn btn-primary">Run</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="cardDiv col-12 col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                    <div class="card" data-aos="zoom-in">
-                        <img class="card-img-top img-fluid " src="cardHeadImg.jpg" alt="Card image cap">
-                        <div class="card-body text-center">
-                            <h4 class="card-title font-weight-bold">MACD</h4>
-                            <a href="#" class="btn btn-primary">Run</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="cardDiv col-12 col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                    <div class="card" data-aos="zoom-in">
-                        <img class="card-img-top img-fluid " src="cardHeadImg.jpg" alt="Card image cap">
-                        <div class="card-body text-center">
-                            <h4 class="card-title font-weight-bold">MACD</h4>
-                            <a href="#" class="btn btn-primary">Run</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="cardDiv col-12 col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                    <div class="card" data-aos="zoom-in">
-                        <img class="card-img-top img-fluid m-auto" src="plusIcon.png" alt="Card image cap">
-                        <div class="card-body text-center new-strategy">
-                            <h4 class="card-title font-weight-bold">NEW STRATEGY</h4>
-                            <a href="createStrategy.html" class="btn btn-primary">CREATE</a>
-                        </div>
-                    </div>
+                    </div> 
                 </div>
             </div>
-        </div> 
-    </section>
+        </div>
+    </div>
 
     <footer>
         <div class="container-fluid">
