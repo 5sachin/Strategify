@@ -1,22 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Hebrew&family=Maven+Pro&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Tourney:ital,wght@1,500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Hebrew&family=Lobster&family=Maven+Pro&family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arsenal:ital@1&family=Cormorant+Garamond:ital@1&family=Cormorant+Upright:wght@500&family=Tourney:ital,wght@1,700&display=swap');
+
+
+
 
 html {
   scroll-behavior: smooth;
 }
 
 nav{
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Cormorant Garamond', serif;
 }
 
 a{
-  font-family: 'Maven Pro', sans-serif;
+  font-family: 'Arsenal', sans-serif;
 }
 
 p{
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Cormorant Garamond', serif;
 }
+
+h3,h2,h4,h5,h6,h1{
+  font-family: 'Arsenal', sans-serif;
+  /*font-family: 'Cormorant Upright', serif;*/
+}
+
+
 
 .active{
   color: white;
@@ -118,9 +126,12 @@ footer .row h3{
   position: relative;
 }
 
-
 .mid-content h2{
-  font-size: 4rem;
+  font-size: 3rem;
+}
+
+.mid-content p{
+  font-size: 2rem;
 }
 
 .back-video .mid-content a{
@@ -157,7 +168,6 @@ footer .row h3{
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  margin: auto;
 }
 
 .rows h3{
@@ -169,7 +179,7 @@ footer .row h3{
 
 .rows p {
   color: #000;
-  font-weight: 400;
+  font-weight: 200;
   font-size: 1.5rem;
 }
 
@@ -213,13 +223,13 @@ footer .row h3{
 }
 
 
-.testimonial-group > .horizo-scroll {
+.scroll > .horizo-scroll {
   overflow-x: auto;
   white-space: nowrap;
   display: block;
   padding: 2rem;
 }
-.testimonial-group > .horizo-scroll > .cardDiv{
+.scroll > .horizo-scroll > .cardDiv{
   display: inline-block;
 }
 
@@ -229,7 +239,24 @@ footer .row h3{
 
 
 
+/*----------------- RESPONSIVE -------------------------*/
 
+
+@media screen and (max-width: 601px) {
+  .mid-content h2{
+    font-size: 2rem;
+  }
+
+  .rows h3{
+    font-size: 2rem;
+  }
+
+  
+}
+
+
+
+/*------------------- END RESPONSIVE ---------------------*/
 
 
 
@@ -273,7 +300,7 @@ body > section > div > div.col-12.col-md-3 > h3{
 
 
 
-
+/* ---------------- LOGIN MODAL ------------------*/
 
 
 
@@ -1539,9 +1566,3 @@ body > div > div > div.row.mt-2 > div > div > div:nth-child(n){
   max-width: 100%;
 }
 
-
-.page-head {
-  position: relative;
-  z-index: 1000;
-  min-height: 1px;
-}
