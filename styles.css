@@ -19,23 +19,32 @@ p{
   font-family: 'Cormorant Garamond', serif;
 }
 
-h3,h2,h4,h5,h6,h1{
+h3,h2,h4,h5,h6,h1,button,input[type=submit]{
   font-family: 'Arsenal', sans-serif;
-  /*font-family: 'Cormorant Upright', serif;*/
 }
 
-
+.brand{
+  font-family: 'Tourney', cursive;
+}
 
 .active{
   color: white;
 }
 
+input[type=submit]:hover {
+  color: white;
+}
+
+.primary-color{
+  color: #204469;
+}
+.theme{
+  background-color: #204469;
+  color: white;
+}
 
 
 /* ---------------- HEADER ---------------*/
-body > header > nav > a{
-  font-family: 'Tourney', cursive;
-}
 
 #navbarSupportedContent > ul > li.nav-item > a{
   font-size: 1.5rem;
@@ -79,14 +88,18 @@ body > header > nav > a{
 
 /* -----------------FOOTER ----------------*/
 
+
+footer{
+  margin-top: -10;
+}
 footer .row{
   background-color: #204469;
 }
 
 footer .row h3{
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Arsenal', sans-serif;
   color: white;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 /* ----------------- END FOOTER -----------------*/
@@ -251,9 +264,13 @@ footer .row h3{
     font-size: 2rem;
   }
 
-  
+  footer .row h3{
+  font-size: 1rem;
 }
 
+
+  
+}
 
 
 /*------------------- END RESPONSIVE ---------------------*/
@@ -261,48 +278,12 @@ footer .row h3{
 
 
 
-/* --------------- REGISTRATION PAGE -----------------*/
 
-body > section{
-    margin-top: 10%;
-}
 
-body > section > .container{
-    border-radius: 25px;
-} 
-
-body > section > div > div.col-12.col-md-9 > form > div:nth-child(1) > div:nth-child(n) > input{
-    color: #204469;
-}
-
-body > section > div > div.col-12.col-md-9 > form > div:nth-child(4) > div > input{
-    background-color: #204469;
-    color: white;
-}
-
-body > section > div > div.col-12.col-md-3 > h3{
-    color: #224069;
-}
-
-body > section > div > div.col-12.col-md-3 > input{
-    background-color: #220469;
-    color: white;
-}
-
-body > section > div > div.col-12.col-md-3 > h3{
-    color: #224069;
-    font-family: 'Tourney', cursive;
-    margin-top: 0;
-
-}
-
-/*----------- REGISTRATION PAGE ----------------*/
 
 
 
 /* ---------------- LOGIN MODAL ------------------*/
-
-
 
 
 .contact-us, .row-content{
@@ -317,7 +298,6 @@ body > div.contact-us.container.p-5 > div{
 
 .text-color{
   color: #204469;
-  font-family: 'Oswald', sans-serif;
 }
 
 .body > div > div > div.col-12.col-md-9 > form > div:nth-child(7) > div > button{

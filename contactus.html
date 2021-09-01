@@ -14,7 +14,7 @@
 <body>
 	<header>
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-            <a href="#" class="navbar-brand">Strateigfy</a>
+            <a href="#" class="navbar-brand brand">Strateigfy</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -77,88 +77,82 @@
         </div>
     </div>
 
-    <div class="contact-us container p-5">
-    	<div class="row row-content border p-3" data-aos="zoom-in">
-           <div class="col-12 text-color">
-              <h3>Send us your Feedback</h3>
-           </div>
-            <div class="col-12 col-md-9 text-color">
-                <form>
-                    <div class="form-group row">
-                        <label for="firstname" class="col-md-2 col-form-label">
-                            <b>First Name:</b>
-                        </label>
-                        <div class="col-md-10">
-                            <input type="text" class="form-control" id="firstname" name="firstname" placeholder="First Name">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="lastname" class="col-md-2 col-form-label">
-                            <b>Last Name:</b>
-                        </label>
-                        <div class="col-md-10">
-                            <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Last Name">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="telnum" class="col-12 col-md-2 col-form-label">
-                            <b>Contact Tel. :</b>
-                        </label>
-                        <div class="col-5 col-md-3">
-                            <input type="tel" class="form-control" id="areacode" name="areacode" placeholder="Area Code">
-                        </div>
-                        <div class="col-7 col-md-7">
-                            <input type="tel" class="form-control" id="telnum" name="telnum" placeholder="Tel Num.">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="emailid" class="col-md-2 col-form-label">
-                            <b>Email Id:</b>
-                        </label>
-                        <div class="col-md-10">
-                            <input type="email" class="form-control" id="emailid" name="emailid" placeholder="Email Id">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="col-md-6 offset-md-2">
-                            <div class="form-check">
-                                <input type="checkbox" name="approve" class="form-check-input" id="approve" value="">
-                                <label class="form-check-label" for="approve">
-                                    <strong>May we contact you ?</strong>
+    <div class="section-25 section-md-55 section-lg-75 section-xl-75 mt-5">
+        <div class="shell">
+            <div class="range">
+                <div class="row row-content border p-3" data-aos="zoom-in">
+                   <div class="col-12 text-color">
+                      <h3>Send us your Feedback</h3>
+                   </div>
+                    <div class="col-12 text-color mt-5">
+                        <form>
+                            <div class="form-group row">
+                                <label for="firstname" class="col-md-2 col-12 col-lg-2 col-form-label">
+                                    <b>First Name:</b>
                                 </label>
+                                <div class="col-md-4 col-lg-4">
+                                    <input type="text" class="form-control" id="firstname" name="firstname" placeholder="First Name">
+                                </div>
+                                <label for="lastname" class="col-md-2 col-12 col-lg-2 col-form-label">
+                                    <b>Last Name:</b>
+                                </label>
+                                <div class="col-md-4 col-lg-4">
+                                    <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Last Name">
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-3 offset-md-1">
-                            <select class="form-control">
-                                <option>Tel.</option>
-                                <option>Email</option>
-                            </select>
-                        </div>
+                            <div class="form-group row">
+                                <label for="telnum" class="col-md-2 col-12 col-lg-2  col-form-label">
+                                    <b>Contact Tel.:</b>
+                                </label>
+                                <div class="col-md-4 col-lg-4">
+                                    <input type="tel" class="form-control" id="telnum" name="telnum" placeholder="Tel Num.">
+                                </div>
+                                <label for="emailid" class="col-md-2 col-form-label">
+                                    <b>Email Id:</b>
+                                </label>
+                                <div class="col-md-4 col-lg-4">
+                                    <input type="email" class="form-control" id="emailid" name="emailid" placeholder="Email Id">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-md-6 offset-md-2">
+                                    <div class="form-check">
+                                        <input type="checkbox" name="approve" class="form-check-input" id="approve" value="">
+                                        <label class="form-check-label" for="approve">
+                                            <strong>May we contact you ?</strong>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <select class="form-control">
+                                        <option>Tel.</option>
+                                        <option>Email</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="feedback" class="col-md-2 col-form-label">
+                                    <b>Your Feedback:</b>
+                                </label>
+                                <div class="col-md-10">
+                                    <textarea class="form-control" id="feedback" name="feedback" rows="12" placeholder="Your feedback"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="offset-md-2 col-md-10">
+                                    <button class="btn btn-primary" type="submit">
+                                            Send Feedback
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
-                    <div class="form-group row">
-                        <label for="feedback" class="col-md-2 col-form-label">
-                            <b>Your Feedback:</b>
-                        </label>
-                        <div class="col-md-10">
-                            <textarea class="form-control" id="feedback" name="feedback" rows="12" placeholder="Your feedback"></textarea>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="offset-md-2 col-md-10">
-                            <button class="btn btn-primary" type="submit">
-                                Send Feedback
-                            </button>
-                        </div>
-                    </div>
-                </form>
+                </div>
             </div>
-             <div class="col-12 col-md">
-            </div>
-       </div>
+        </div>
     </div>
 
-
-	<footer>
+	<footer class="fixed-bottom">
         <div class="container-fluid">
             <div class="row p-2">
                 <div class="col-12 text-center p-2 m-auto">
