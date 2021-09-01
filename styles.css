@@ -3,6 +3,10 @@
 
 
 
+
+
+/*------------------ GLOBAL --------------------*/
+
 html {
   scroll-behavior: smooth;
 }
@@ -42,6 +46,22 @@ input[type=submit]:hover {
   background-color: #204469;
   color: white;
 }
+
+
+
+/*------------------- END GLOBAL ------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* ---------------- HEADER ---------------*/
@@ -86,6 +106,14 @@ input[type=submit]:hover {
 
 
 
+
+
+
+
+
+
+
+
 /* -----------------FOOTER ----------------*/
 
 
@@ -103,6 +131,16 @@ footer .row h3{
 }
 
 /* ----------------- END FOOTER -----------------*/
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -247,7 +285,17 @@ footer .row h3{
 }
 
 
-/* ------------------ INDEX PAGE ---------------------*/
+/* ------------------END INDEX PAGE ---------------------*/
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -257,23 +305,63 @@ footer .row h3{
 
 @media screen and (max-width: 601px) {
   .mid-content h2{
-    font-size: 2rem;
-  }
+  font-size: 2rem;
+}
 
   .rows h3{
-    font-size: 2rem;
-  }
+  font-size: 2rem;
+}
 
   footer .row h3{
   font-size: 1rem;
 }
-
-
   
+}
+
+@media screen and (max-width: 765px){
+
+  .loginbtn{
+  display: none;
+}
+
 }
 
 
 /*------------------- END RESPONSIVE ---------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------- REGISTRATION PAGE ------------------*/
+
+
+
+
+
+
+/* -------------------- END REGISTRATION PAGE ---------------*/
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -328,6 +416,609 @@ body > div > div > div.row.mt-2 > div > div > div:nth-child(n){
   display: inline-block;
   float: none;
 }
+
+
+
+
+/* ------------------- END LOGIN MODAL -----------------------*/
+
+.font-3{
+  font-size: 0.15rem;
+}
+
+.font-4{
+  font-size: 0.25rem;
+}
+
+.font-5{
+  font-size: 0.35rem;
+}
+
+.font-6{
+  font-size: 0.45rem;
+}
+
+.font-7{
+  font-size: 0.55rem;
+}
+
+.font-8{
+  font-size: 0.65rem;
+}
+
+.font-9{
+  font-size: 0.75rem;
+}
+
+.font-10{
+  font-size: 0.85rem;
+}
+.font-11{
+  font-size: 0.95rem;
+}
+
+.font-12{
+  font-size: 1rem;
+}
+
+.font-13{
+  font-size: 0.55rem;
+}
+
+.font-14{
+  font-size: 0.6rem;
+}
+
+.font-15{
+  font-size: 1.5rem;
+}
+
+.font-16{
+  font-size: 0.75rem;
+}
+
+.font-17{
+  font-size: 0.8rem;
+}
+
+.font-18{
+  font-size: 0.85rem;
+}
+
+.font-19{
+  font-size: 0.9rem;
+}
+
+.font-20{
+  font-size: 1.95rem;
+}
+
+.font-21{
+  font-size: 1rem;
+}
+
+.font-22{
+  font-size: 1.05rem;
+}
+
+.font-23{
+  font-size: 1.10rem;
+}
+
+.font-24{
+  font-size: 1.15rem;
+}
+
+.font-25{
+  font-size: 2.20rem;
+}
+
+.font-26{
+  font-size: 1.25rem;
+}
+
+.font-27{
+  font-size: 1.30rem;
+}
+
+.font-28{
+  font-size: 1.35rem;
+}
+
+.font-29{
+  font-size: 1.4rem;
+}
+
+.font-30{
+  font-size: 1.45rem;
+}
+
+
+
+
+
+@media (min-width: 480px) {
+
+  .font-3{
+  font-size: 0.15rem;
+}
+
+.font-4{
+  font-size: 0.2rem;
+}
+
+.font-5{
+  font-size: 0.25rem;
+}
+
+.font-6{
+  font-size: 0.3rem;
+}
+
+.font-7{
+  font-size: 0.35rem;
+}
+
+.font-8{
+  font-size: 0.4rem;
+}
+
+.font-9{
+  font-size: 0.45rem;
+}
+
+.font-10{
+  font-size: 0.5rem;
+}
+.font-11{
+  font-size: 0.55rem;
+}
+
+.font-12{
+  font-size: 0.6rem;
+}
+
+.font-13{
+  font-size: 0.65rem;
+}
+
+.font-14{
+  font-size: 0.7rem;
+}
+
+.font-15{
+  font-size: 1.2rem;
+}
+
+.font-16{
+  font-size: 0.8rem;
+}
+
+.font-17{
+  font-size: 0.85rem;
+}
+
+.font-18{
+  font-size: 0.9rem;
+}
+
+.font-19{
+  font-size: 0.95rem;
+}
+
+.font-20{
+  font-size: 2.5rem;
+}
+
+.font-21{
+  font-size: 1.05rem;
+}
+
+.font-22{
+  font-size: 2.2rem;
+}
+
+.font-23{
+  font-size: 2.3rem;
+}
+
+.font-24{
+  font-size: 2.4rem;
+}
+
+.font-25{
+  font-size: 2rem;
+}
+
+.font-26{
+  font-size: 2.6rem;
+}
+
+.font-27{
+  font-size: 2.7rem;
+}
+
+.font-28{
+  font-size: 2.8rem;
+}
+
+.font-29{
+  font-size: 2.9rem;
+}
+
+.font-30{
+  font-size: 3rem;
+}
+
+}
+
+
+
+@media (min-width: 768px) {
+
+  .font-3{
+  font-size: 1.1rem;
+}
+
+.font-4{
+  font-size: 1.2rem;
+}
+
+.font-5{
+  font-size: 1.3rem;
+}
+
+.font-6{
+  font-size: 1.4rem;
+}
+
+.font-7{
+  font-size: 1.5rem;
+}
+
+.font-8{
+  font-size: 1.6rem;
+}
+
+.font-9{
+  font-size: 1.7rem;
+}
+
+.font-10{
+  font-size: 1.8rem;
+}
+.font-11{
+  font-size: 1.9rem;
+}
+
+.font-12{
+  font-size: 2rem;
+}
+
+.font-13{
+  font-size: 2.1rem;
+}
+
+.font-14{
+  font-size: 2.2rem;
+}
+
+.font-15{
+  font-size: 2.3rem;
+}
+
+.font-16{
+  font-size: 2.4rem;
+}
+
+.font-17{
+  font-size: 2.5rem;
+}
+
+.font-18{
+  font-size: 2.6rem;
+}
+
+.font-19{
+  font-size: 2.7rem;
+}
+
+.font-20{
+  font-size: 2.8rem;
+}
+
+.font-21{
+  font-size: 2.9rem;
+}
+
+.font-22{
+  font-size: 3rem;
+}
+
+.font-23{
+  font-size: 3.1rem;
+}
+
+.font-24{
+  font-size: 3.2rem;
+}
+
+.font-25{
+  font-size: 3.3rem;
+}
+
+.font-26{
+  font-size: 3.4rem;
+}
+
+.font-27{
+  font-size: 3.5rem;
+}
+
+.font-28{
+  font-size: 3.5rem;
+}
+
+.font-29{
+  font-size: 3.6rem;
+}
+
+.font-30{
+  font-size: 3.7rem;
+}
+
+}
+
+
+
+
+@media (min-width: 1251px) {
+
+  .font-3{
+  font-size: 1.05rem;
+}
+
+.font-4{
+  font-size: 1.15rem;
+}
+
+.font-5{
+  font-size: 1.25rem;
+}
+
+.font-6{
+  font-size: 1.35rem;
+}
+
+.font-7{
+  font-size: 1.45rem;
+}
+
+.font-8{
+  font-size: 1.55rem;
+}
+
+.font-9{
+  font-size: 1.65rem;
+}
+
+.font-10{
+  font-size: 1.75rem;
+}
+.font-11{
+  font-size: 1.85rem;
+}
+
+.font-12{
+  font-size: 1.95rem;
+}
+
+.font-13{
+  font-size: 2.05rem;
+}
+
+.font-14{
+  font-size: 2.15rem;
+}
+
+.font-15{
+  font-size: 2.25rem;
+}
+
+.font-16{
+  font-size: 2.35rem;
+}
+
+.font-17{
+  font-size: 2.45rem;
+}
+
+.font-18{
+  font-size: 2.55rem;
+}
+
+.font-19{
+  font-size: 2.65rem;
+}
+
+.font-20{
+  font-size: 2.75rem;
+}
+
+.font-21{
+  font-size: 2.85rem;
+}
+
+.font-22{
+  font-size: 2.95rem;
+}
+
+.font-23{
+  font-size: 3.05rem;
+}
+
+.font-24{
+  font-size: 3.15rem;
+}
+
+.font-25{
+  font-size: 3.25rem;
+}
+
+.font-26{
+  font-size: 3.35rem;
+}
+
+.font-27{
+  font-size: 3.45rem;
+}
+
+.font-28{
+  font-size: 3.55rem;
+}
+
+.font-29{
+  font-size: 3.65rem;
+}
+
+.font-30{
+  font-size: 3.75rem;
+}
+
+}
+
+
+
+
+@media (min-width: 1485px) {
+
+
+.font-3{
+  font-size: 1.1rem;
+}
+
+.font-4{
+  font-size: 1.2rem;
+}
+
+.font-5{
+  font-size: 1.3rem;
+}
+
+.font-6{
+  font-size: 1.4rem;
+}
+
+.font-7{
+  font-size: 1.5rem;
+}
+
+.font-8{
+  font-size: 1.6rem;
+}
+
+.font-9{
+  font-size: 1.7rem;
+}
+
+.font-10{
+  font-size: 1.8rem;
+}
+.font-11{
+  font-size: 1.9rem;
+}
+
+.font-12{
+  font-size: 2rem;
+}
+
+.font-13{
+  font-size: 2.1rem;
+}
+
+.font-14{
+  font-size: 2.2rem;
+}
+
+.font-15{
+  font-size: 2.3rem;
+}
+
+.font-16{
+  font-size: 2.4rem;
+}
+
+.font-17{
+  font-size: 2.5rem;
+}
+
+.font-18{
+  font-size: 2.6rem;
+}
+
+.font-19{
+  font-size: 2.7rem;
+}
+
+.font-20{
+  font-size: 2.5rem;
+}
+
+.font-21{
+  font-size: 2.9rem;
+}
+
+.font-22{
+  font-size: 3rem;
+}
+
+.font-23{
+  font-size: 3.1rem;
+}
+
+.font-24{
+  font-size: 3.2rem;
+}
+
+.font-25{
+  font-size: 3.3rem;
+}
+
+.font-26{
+  font-size: 3.4rem;
+}
+
+.font-27{
+  font-size: 3.5rem;
+}
+
+.font-28{
+  font-size: 3.6rem;
+}
+
+.font-29{
+  font-size: 3.70rem;
+}
+
+.font-30{
+  font-size: 3.8rem;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .section-0 {
