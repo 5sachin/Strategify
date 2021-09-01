@@ -47,9 +47,20 @@ input[type=submit]:hover {
   color: white;
 }
 
+.padding{
+  padding-right: 15px;
+}
 
 
 /*------------------- END GLOBAL ------------------*/
+
+
+
+
+
+
+
+
 
 
 
@@ -114,6 +125,15 @@ input[type=submit]:hover {
 
 
 
+
+
+
+
+
+
+
+
+
 /* -----------------FOOTER ----------------*/
 
 
@@ -131,6 +151,14 @@ footer .row h3{
 }
 
 /* ----------------- END FOOTER -----------------*/
+
+
+
+
+
+
+
+
 
 
 
@@ -300,6 +328,13 @@ footer .row h3{
 
 
 
+
+
+
+
+
+
+
 /*----------------- RESPONSIVE -------------------------*/
 
 
@@ -315,10 +350,14 @@ footer .row h3{
   footer .row h3{
   font-size: 1rem;
 }
+
+.padding{
+  padding: 0;
+}
   
 }
 
-@media screen and (max-width: 765px){
+@media screen and (max-width: 993px){
 
   .loginbtn{
   display: none;
@@ -342,14 +381,24 @@ footer .row h3{
 
 
 
+
+
+
+
+
+
+
+
 /* -------------------- REGISTRATION PAGE ------------------*/
 
 
-
-
+.registrationPage{
+  margin-top: 10%;
+}
 
 
 /* -------------------- END REGISTRATION PAGE ---------------*/
+
 
 
 
@@ -418,9 +467,70 @@ body > div > div > div.row.mt-2 > div > div > div:nth-child(n){
 }
 
 
-
-
 /* ------------------- END LOGIN MODAL -----------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------- PROFILE PAGE ------------------*/
+
+
+
+
+
+
+
+
+/*------------------------ END PROFILE PAGE --------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .font-3{
   font-size: 0.15rem;
