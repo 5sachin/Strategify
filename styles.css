@@ -51,7 +51,18 @@ input[type=submit]:hover {
   padding-right: 15px;
 }
 
+.cardBtn{
+position: absolute;
+top: 0; left: 0;
+height: 100%; width: 100%;
+background-color:transparent !important;
+}
 
+.jumbotron{
+  padding: 70px 30px 70px 30px;
+  margin: 0px auto;
+  border-bottom: 1px ridge;
+}
 /*------------------- END GLOBAL ------------------*/
 
 
@@ -488,6 +499,7 @@ body > div > div > div.row.mt-2 > div > div > div:nth-child(n){
 
 
 
+
 /*-------------------- PROFILE PAGE ------------------*/
 
 
@@ -503,6 +515,68 @@ body > div > div > div.row.mt-2 > div > div > div:nth-child(n){
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------- VIEW STRATEGY ---------------------------*/
+
+
+.drawer{
+  color: white;
+  width: 0px;
+  height: 100%;
+  width: 0;
+  z-index: 1;
+  display: none;
+}
+
+.drawerBtn{
+  display: none;
+}
+
+.w-sidebar{
+  width: 50%;
+}
+
+@media screen and (max-width: 993px) {
+
+  
+
+.drawerBtn{
+  display: block;
+}
+
+.drawerCollapse{
+  display: none;
+}
+
+}
+
+
+
+
+/* -------------------END  VIEW STRATEGY ---------------------------*/
 
 
 
