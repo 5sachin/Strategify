@@ -41,43 +41,59 @@
         </nav>
     </header>
 
-    
-        <div class="drawer" id="drawer">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <div class="navbar-dark bg-dark h-100 w-sidebar">
-                <h6 class="px-3 pt-3">Your Stratgies</h6>
-                <ul class="nav flex-column flex-nowrap text-truncate">
-                    <li class="nav-item">
-                        <label>Strategy 1 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></label>
-                    </li>
-                    <li class="nav-item">
-                        <label>Strategy 1</label>
-                    </li>
-                    <li class="nav-item">
-                        <label>Strategy 1</label>
-                    </li>
-                </ul>
-            </div>
-        </div>
 
-    <div class="jumbotron min-vh-100 m-0 d-flex flex-column">
-        <div class="row p-3 border-left border-dark border-right" >
+    <div id="mySidenav" class="sidenav mt-3">
+        <div class="row">
             <div class="col-12">
-                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-            </div>
-            <div class="col-12 col-lg-2 col-xl-2 border-right border-dark border-left">
-                <div class="row drawerCollapse">
-                    <div class="col-12">
-                        <h3>Your Stratgies</h3>
-                    </div>
-                    <div class="col-12">
-                        <label>Strategy 1</label>
-                    </div>
-                    <div class="col-12">
-                        <label>Strategy 2</label>
+                <div class="row border-bottom-0 border-light">
+                    <div class="col-12 ml-auto">
+                        <h3 class="font-weight-bold text-light">Your Startegies</h3>
+                        <span class="closebtn text-light" onclick="closeNav()">&times;</span>
+                        <hr class="border-light border-bottom">
                     </div>
                 </div>
-                
+            </div>
+            <div class="col-12">
+                <a href="#" class="active">Strategy 1 <span class="float-right">&#x270E;</span></a>
+            </div>
+            <div class="col-12">
+                <a href="#">Strategy 2 <span class="float-right">&#x270E;</span></a>
+            </div>
+            <div class="col-12">
+                <a href="#" class="">Strategy 3 <span class="float-right">&#x270E;</span></a>
+            </div>
+            <div class="col-12">
+                <a href="#">Strategy 4 <span class="float-right">&#x270E;</span></a>
+            </div>
+        </div>
+      
+      
+      
+      
+      
+    </div>
+    
+
+    <div class="jumbotron min-vh-100">
+        <div class="row p-3 border-left border-dark border-right" style="height: 100%; position: relative;">
+            <div class="col-12 d-block d-sm-none d-none d-sm-block d-md-none d-none d-md-block d-lg-none">
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="closeBtn">&#9776;</span>
+            </div>
+            <div class="col-12 col-lg-2 col-xl-2 strategyList border-right border-dark border-left">
+                <div class="row text-center">
+                    <div class="col-12">
+                        <h3 class="font-weight-bold">Your Stratgies</h3>
+                        <hr class="border-top border-dark">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <a href="#">Strategy 1  <span class="float-right">&#x270E;</span></a>
+                    </div>
+                    <div class="col-12">
+                        <a href="#">Strategy 2  <span class="float-right">&#x270E;</span></a>
+                    </div>
+                </div>   
             </div>
             <div class="col-12 col-lg-8 col-xl-8 border-right border-dark border-left">
                 

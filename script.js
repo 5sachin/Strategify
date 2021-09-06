@@ -47,12 +47,9 @@ $(document).ready(function() {
 });
 
 function openNav() {
-    console.log("ENter");
-    document.getElementById("drawer").style.display = "block";
-    document.getElementById("drawer").style.width = "250px";
+  document.getElementById("mySidenav").style.width = "250px";
 }
 
 function closeNav() {
-    console.log("ENter");
-  document.getElementById("drawer").style.width = "0";
+  document.getElementById("mySidenav").style.width = "0";
 }

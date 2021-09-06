@@ -344,8 +344,6 @@ footer .row h3{
 
 
 
-
-
 /*----------------- RESPONSIVE -------------------------*/
 
 
@@ -541,37 +539,87 @@ body > div > div > div.row.mt-2 > div > div > div:nth-child(n){
 
 /* ------------------- VIEW STRATEGY ---------------------------*/
 
+.strategyList{
+  height: 100%;
+}
 
-.drawer{
-  color: white;
-  width: 0px;
+.strategyList h3{
+  display: block;
+  color: #204469;
+  padding: 4px 4px 4px 4px;
+  font-size: 1.8rem;
+  top: 0;
+  position: relative;
+}
+
+.strategyList a{
+  display: block;
+  color: #204469;
+  padding: 8px 8px 8px 8px;
+  font-size: 1.5rem;
+}
+
+
+.sidenav {
   height: 100%;
   width: 0;
+  position: fixed;
   z-index: 1;
-  display: none;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.6s;
+  padding-top: 60px;
 }
 
-.drawerBtn{
-  display: none;
-}
-
-.w-sidebar{
-  width: 50%;
-}
-
-@media screen and (max-width: 993px) {
-
-  
-
-.drawerBtn{
+.sidenav a {
+  padding: 8px 8px 8px 8px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
   display: block;
+  transition: 0.3s;
 }
 
-.drawerCollapse{
+.sidenav h3{
+  padding: 8px 8px 8px 8px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav .active{
+  color: #fff;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
+
+
+
+@media screen and (max-width: 991px) {
+
+.strategyList{
   display: none;
 }
 
-}
+} 
 
 
 
