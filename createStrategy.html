@@ -41,8 +41,8 @@
         </nav>
     </header>
 
-    <div class="jumbotron">
-        <div class="container mt-5">
+    <div class="jumbotron-fluid">
+        <div class="container mt-5 createStrategy">
             <div class="row">
                 <div class="col-2 col-sm-12">
                     
@@ -57,11 +57,34 @@
                         <label>Strategy</label>
                     </div>
                     <hr class="dashed">
-                    <div class="offset-2">
+                    <div class="offset-lg-2 offset-xl-2">
                         
                     </div>
-                    <div class="col-10">
+                    <div class="col-lg-10 col-xl-10 col-md-12 col-sm-12 col-xs-12">
                         <input type="text" name="Strategyname" placeholder="Strategy Name" class="form-control">
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-12">
+                        <label>Position</label>
+                    </div>
+                    <hr class="dashed">
+                    <div class="offset-lg-2 offset-xl-2">
+                        
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-xs-6 col-lg-5 col-xl-5">
+                        <div class="dropdown">
+                              <button class="btn dropdown-toggle form-control" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Buy
+                              </button>
+                              <div class="dropdown-menu form-control" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Buy</a>
+                                <a class="dropdown-item" href="#">Sell</a>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-xs-6 col-lg-5 col-xl-5">
+                        <input type="text" name="Strategyname" placeholder="Enter Quantity in lots" class="form-control">
                     </div>
                 </div>
                 <div class="row mt-5">
@@ -69,24 +92,25 @@
                         <label>Scrip</label>
                     </div>
                     <hr class="dashed">
-                    <div class="offset-2">
+                    <div class="offset-lg-2 offset-xl-2">
                         
                     </div>
-                    <div class="col-5">
+                    <div class="col-lg-5 col-xl-5 col-md-12 col-sm-12 col-xs-12">
                         <input type="text" name="Strategyname" placeholder="Add Scrip E.g SBIN" class="form-control">
                     </div>
-                    <div class="col-5">
-                        <a class="btn form-control  dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Time Frame</a>
-                        <div class="dropdown-menu form-control text-center" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">1 Minute</a>
-                            <a class="dropdown-item" href="#">3 Minute</a>
-                            <a class="dropdown-item" href="#">5 Minute</a>
-                            <a class="dropdown-item" href="#">10 Minute</a>
-                            <a class="dropdown-item" href="#">15 Minute</a>
-                            <a class="dropdown-item" href="#">30 Minute</a>
-                            <a class="dropdown-item" href="#">1 Hour</a>
-                            <a class="dropdown-item" href="#">1 Day</a>
+                    <div class="col-lg-5 col-xl-5 col-md-12 col-sm-12 col-xs-12">
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle form-control" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Time Frame</button>
+                            <div class="dropdown-menu bg-light form-control text-center" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">1 Minute</a>
+                                <a class="dropdown-item" href="#">3 Minute</a>
+                                <a class="dropdown-item" href="#">5 Minute</a>
+                                <a class="dropdown-item" href="#">10 Minute</a>
+                                <a class="dropdown-item" href="#">15 Minute</a>
+                                <a class="dropdown-item" href="#">30 Minute</a>
+                                <a class="dropdown-item" href="#">1 Hour</a>
+                                <a class="dropdown-item" href="#">1 Day</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -97,16 +121,16 @@
                                 <label>Entry Condition</label>
                             </div>
                             <hr class="dashed">
-                            <div class="offset-md-2 offset-lg-2">
+                            <div class="offset-lg-2 offset-xl-2">
                                 
                             </div>
-                            <div class="col-3 col-sm-12 col-md-12 col-xs-12">
+                            <div class="col-lg-3 col-xl-3 col-md-12 col-sm-12 col-xs-12">
                                 <input type="text" name="Strategyname" placeholder="Indicator" class="form-control">
                             </div>
-                            <div class="col-3 col-sm-12 col-md-12 col-xs-12">
+                            <div class="col-lg-3 col-xl-3 col-md-12 col-sm-12 col-xs-12">
                                 <input type="text" name="Strategyname" placeholder="Comparator" class="form-control">
                             </div>
-                            <div class="col-3 col-sm-12 col-md-12 col-xs-12">
+                            <div class="col-lg-3 col-xl-3 col-md-12 col-sm-12 col-xs-12">
                                 <input type="text" name="Strategyname" placeholder="Indicator" class="form-control">
                             </div>
                             <div class="col-1">
@@ -129,18 +153,18 @@
                                 <label>Exit Condition</label>
                             </div>
                             <hr class="dashed">
-                            <div class="offset-2">
+                            <div class="offset-lg-2 offset-xl-2">
                                 
                             </div>
-                            <div class="col-5 col-sm-12 col-md-12 col-xs-12">
+                            <div class="col-5">
                                 <input type="text" name="stoploss" placeholder="Stop loss %" class="form-control">
                             </div>
-                            <div class="col-5 col-sm-12 col-md-12 col-xs-12">
+                            <div class="col-5">
                                 <input type="text" name="target%" placeholder="Target %" class="form-control">
                             </div>
                         </div>
                         <div class="row">
-                            <div class="offset-2">
+                            <div class="offset-lg-2 offset-xl-2">
                                 
                             </div>
                             <a href="#">Add Another Field</a>
@@ -155,7 +179,7 @@
                                 <label>Finish</label>
                             </div>
                             <hr class="dashed">
-                            <div class="offset-2">
+                            <div class="offset-lg-2 offset-xl-2">
                                 
                             </div>
                             <div class="col-5">
@@ -263,7 +287,7 @@
 
 
 
-    <footer class="container-fluid fixed-bottom">
+    <footer class="container-fluid mt-5">
         <div class="row p-2">
             <div class="col-12 text-center p-2 m-auto">
                 <h3>&copy Copyright: Strategify.</h3>
