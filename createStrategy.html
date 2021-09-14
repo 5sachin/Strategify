@@ -41,250 +41,134 @@
         </nav>
     </header>
 
-    <div class="jumbotron-fluid">
-        <div class="container mt-5 createStrategy">
-            <div class="row">
-                <div class="col-2 col-sm-12">
-                    
-                </div>
-                <div class="col-10 col-sm-12">
-                    
-                </div>
+
+
+
+
+
+
+
+
+
+    <div class="container createStrategy">
+        <div class="row">
+            <div class="col-md-12">
+                <form>
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Create Strategy</h4>
+                            <div id="content">
+                                <ul class="timeline">
+                                    <li class="event" value="Strategy Name">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <input type="text" name="Strategyname" placeholder="Strategy Name" class="form-control">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="event" value="Position">
+                                        <div class="row mt-5">
+                                            <div class="col-6">
+                                                <div class="dropdown">
+                                                      <button class="btn dropdown-toggle form-control" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        Buy
+                                                      </button>
+                                                      <div class="dropdown-menu form-control" aria-labelledby="dropdownMenuButton">
+                                                        <a class="dropdown-item" href="#">Buy</a>
+                                                        <a class="dropdown-item" href="#">Sell</a>
+                                                      </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <input type="text" name="Strategyname" placeholder="Enter Quantity in lots" class="form-control">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="event" value="Scrip">
+                                        <div class="row mt-5">
+                                            <div class="col-lg-6 col-xl-6 col-md-12 col-sm-12 col-xs-12">
+                                                <input type="text" name="Strategyname" placeholder="Add Scrip E.g SBIN" class="form-control">
+                                            </div>
+                                            <div class="col-lg-6 col-xl-6 col-md-12 col-sm-12 col-xs-12">
+                                                <div class="dropdown">
+                                                    <button class="btn dropdown-toggle form-control" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Time Frame</button>
+                                                    <div class="dropdown-menu bg-light form-control text-center" aria-labelledby="dropdownMenuButton">
+                                                        <a class="dropdown-item" href="#">1 Minute</a>
+                                                        <a class="dropdown-item" href="#">3 Minute</a>
+                                                        <a class="dropdown-item" href="#">5 Minute</a>
+                                                        <a class="dropdown-item" href="#">10 Minute</a>
+                                                        <a class="dropdown-item" href="#">15 Minute</a>
+                                                        <a class="dropdown-item" href="#">30 Minute</a>
+                                                        <a class="dropdown-item" href="#">1 Hour</a>
+                                                        <a class="dropdown-item" href="#">1 Day</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="event" value="Entry Condition">
+                                        <div class="row mt-5">
+                                            <div class="col-12">
+                                                <div class="row">
+                                                    <div class="col-lg-4 col-xl-4 col-md-12 col-sm-12 col-xs-12">
+                                                        <input type="text" name="Strategyname" placeholder="Indicator" class="form-control">
+                                                    </div>
+                                                    <div class="col-lg-3 col-xl-3 col-md-12 col-sm-12 col-xs-12">
+                                                        <input type="text" name="Strategyname" placeholder="Comparator" class="form-control">
+                                                    </div>
+                                                    <div class="col-lg-4 col-xl-4 col-md-12 col-sm-12 col-xs-12">
+                                                        <input type="text" name="Strategyname" placeholder="Indicator" class="form-control">
+                                                    </div>
+                                                    <div class="col-1">
+                                                        <a href="#" class="w-25 h-25">&times;</a>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <a href="#">Add Another Field</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="event" value="Exit Condition">
+                                        <div class="row mt-5">
+                                            <div class="col-12">
+                                                <div class="row">
+                                                    <div class="col-lg-6 col-xl-6 col-sm-12 col-xs-12 col-md-12">
+                                                        <input type="text" name="stoploss" placeholder="Stop loss %" class="form-control">
+                                                    </div>
+                                                    <div class="col-lg-6 col-xl-6 col-sm-12 col-xs-12 col-md-12">
+                                                        <input type="text" name="target%" placeholder="Target %" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <a href="#">Add Another Field</a>
+                                                </div>
+                                            </div>   
+                                        </div>
+                                    </li>
+                                    <li class="event" value="Finish">
+                                        <div class="row mt-5">
+                                            <div class="col-12">
+                                                <div class="row">
+                                                    <hr class="dashed">
+                                                    <div class="offset-lg-2 offset-xl-2">
+                                                        
+                                                    </div>
+                                                    <div class="col-12 text-center">
+                                                        <button>Backtest</button>
+                                                    </div>
+                                                </div>
+                                            </div>  
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </form>  
             </div>
-            <form>
-                <div class="row mt-5">
-                    <div class="col-12">
-                        <label>Strategy</label>
-                    </div>
-                    <hr class="dashed">
-                    <div class="offset-lg-2 offset-xl-2">
-                        
-                    </div>
-                    <div class="col-lg-10 col-xl-10 col-md-12 col-sm-12 col-xs-12">
-                        <input type="text" name="Strategyname" placeholder="Strategy Name" class="form-control">
-                    </div>
-                </div>
-                <div class="row mt-5">
-                    <div class="col-12">
-                        <label>Position</label>
-                    </div>
-                    <hr class="dashed">
-                    <div class="offset-lg-2 offset-xl-2">
-                        
-                    </div>
-                    <div class="col-sm-6 col-md-6 col-xs-6 col-lg-5 col-xl-5">
-                        <div class="dropdown">
-                              <button class="btn dropdown-toggle form-control" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Buy
-                              </button>
-                              <div class="dropdown-menu form-control" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="#">Buy</a>
-                                <a class="dropdown-item" href="#">Sell</a>
-                              </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-6 col-xs-6 col-lg-5 col-xl-5">
-                        <input type="text" name="Strategyname" placeholder="Enter Quantity in lots" class="form-control">
-                    </div>
-                </div>
-                <div class="row mt-5">
-                    <div class="col-12">
-                        <label>Scrip</label>
-                    </div>
-                    <hr class="dashed">
-                    <div class="offset-lg-2 offset-xl-2">
-                        
-                    </div>
-                    <div class="col-lg-5 col-xl-5 col-md-12 col-sm-12 col-xs-12">
-                        <input type="text" name="Strategyname" placeholder="Add Scrip E.g SBIN" class="form-control">
-                    </div>
-                    <div class="col-lg-5 col-xl-5 col-md-12 col-sm-12 col-xs-12">
-                        <div class="dropdown">
-                            <button class="btn dropdown-toggle form-control" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Time Frame</button>
-                            <div class="dropdown-menu bg-light form-control text-center" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="#">1 Minute</a>
-                                <a class="dropdown-item" href="#">3 Minute</a>
-                                <a class="dropdown-item" href="#">5 Minute</a>
-                                <a class="dropdown-item" href="#">10 Minute</a>
-                                <a class="dropdown-item" href="#">15 Minute</a>
-                                <a class="dropdown-item" href="#">30 Minute</a>
-                                <a class="dropdown-item" href="#">1 Hour</a>
-                                <a class="dropdown-item" href="#">1 Day</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row mt-5">
-                    <div class="col-12">
-                        <div class="row">
-                            <div class="col-12">
-                                <label>Entry Condition</label>
-                            </div>
-                            <hr class="dashed">
-                            <div class="offset-lg-2 offset-xl-2">
-                                
-                            </div>
-                            <div class="col-lg-3 col-xl-3 col-md-12 col-sm-12 col-xs-12">
-                                <input type="text" name="Strategyname" placeholder="Indicator" class="form-control">
-                            </div>
-                            <div class="col-lg-3 col-xl-3 col-md-12 col-sm-12 col-xs-12">
-                                <input type="text" name="Strategyname" placeholder="Comparator" class="form-control">
-                            </div>
-                            <div class="col-lg-3 col-xl-3 col-md-12 col-sm-12 col-xs-12">
-                                <input type="text" name="Strategyname" placeholder="Indicator" class="form-control">
-                            </div>
-                            <div class="col-1">
-                                <a href="#" class="w-25 h-25">&times;</a>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="offset-2">
-                                
-                            </div>
-                            <a href="#">Add Another Field</a>
-                        </div>
-                    </div>
-                    
-                </div>
-                <div class="row mt-5">
-                    <div class="col-12">
-                        <div class="row">
-                            <div class="col-12">
-                                <label>Exit Condition</label>
-                            </div>
-                            <hr class="dashed">
-                            <div class="offset-lg-2 offset-xl-2">
-                                
-                            </div>
-                            <div class="col-5">
-                                <input type="text" name="stoploss" placeholder="Stop loss %" class="form-control">
-                            </div>
-                            <div class="col-5">
-                                <input type="text" name="target%" placeholder="Target %" class="form-control">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="offset-lg-2 offset-xl-2">
-                                
-                            </div>
-                            <a href="#">Add Another Field</a>
-                        </div>
-                    </div>
-                    
-                </div>
-                <div class="row mt-5">
-                    <div class="col-12">
-                        <div class="row">
-                            <div class="col-12">
-                                <label>Finish</label>
-                            </div>
-                            <hr class="dashed">
-                            <div class="offset-lg-2 offset-xl-2">
-                                
-                            </div>
-                            <div class="col-5">
-                                <button>Backtest</button>
-                            </div>
-                        </div>
-                    </div>  
-                </div>     
-            </form>
         </div>
     </div>
-    
-
-    <!-- <div class="section-75 section-md-120 section-lg-120 section-xl-150 mt-5">
-        <div class="shell">
-            <div class="range">
-                <form class="p-5">
-                    <div class="form-group row">
-                        <div class="col-md-4 col-12">
-                            <input type="text" name="StrategyName" class="font-weight-bold form-control" placeholder="Strategy Name">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="col-md-12 col-12">
-                            <label class="h4 font-weight-bold">Entry:</label>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="col-md-4 col-12 ">
-                            <input type="text" class="font-weight-bold form-control" name="buysellEntry" placeholder="Buy/Sell">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="col-md-4 col-12 ">
-                            <input type="text" class="font-weight-bold form-control" name="indicatorpriceEntry" placeholder="Indicator/Price">
-                        </div>
-                        <div class="col-md-4 col-12 ">
-                            <input type="text" class="font-weight-bold form-control" name="conditionEntry" placeholder="Condition">
-                        </div>
-                        <div class="col-md-4 col-12">
-                            <div class="row">
-                                <div class="col-8 IndicatorEntry">
-                                    <input type="text" class="font-weight-bold form-control" name="conditionEntry2" placeholder="Indicator Price">
-                                </div>
-                                <div class="col-4">
-                                    <button href="#" class="btn addIndicator fa fa-plus"/>
-                                </div>
-                            </div>     
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="col-md-12 col-12">
-                            <label class="h4 font-weight-bold">Exit:</label>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="col-md-4 col-12">
-                            <input type="text" class="font-weight-bold form-control" name="buysllExit" placeholder="Buy/Sell">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="col-md-4 col-12">
-                            <input type="text" class="font-weight-bold form-control" name="indicatorpriceExit" placeholder="Indicator/Price">
-
-                        </div>
-                        <div class="col-md-4 col-12">
-                            <input type="text" class="font-weight-bold form-control" name="conditionExit" placeholder="Condition">
-                        </div>
-                        <div class="col-md-4 col-12">
-                            <div class="row">
-                                <div class="col-8 IndicatorEntry2">
-                                    <input type="text" class="font-weight-bold form-control" name="conditionExit2" placeholder="Indicator Price">
-                                </div>
-                                <div class="col-4">
-                                    <button href="#" class="btn addIndicator2 fa fa-plus"/>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="col-md-4 col-12">
-                            <input type="text" class="font-weight-bold form-control" name="targetExit" placeholder="Target %">
-                        </div>
-                        <div class="col-md-4 col-12">
-                            <input type="text" class="font-weight-bold form-control" name="slExit" placeholder="SL %">
-                        </div>
-                        <div class="col-md-4 col-12">
-                            <input type="text" class="font-weight-bold form-control" name="OHCL" placeholder="O,H,C,L">
-                        </div>
-                    </div>
-                    <div class="form-group row text-center">
-                        <div class="col-12 align-content-center text-center p-1">
-                            <input type="button" class="btn btn-primary" name="indicatorprice" value="Save">
-                            <input type="button" class="btn btn-success" name="condition" value="Run">
-                            <input type="button" class="btn btn-danger" name="condition" value="Cancel">
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div> -->
-
-    
-
 
 
     <footer class="container-fluid mt-5">
