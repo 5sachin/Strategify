@@ -70,11 +70,12 @@
                                         <div class="row mt-5">
                                             <div class="col-6">
                                                 <div class="dropdown">
-                                                      <button class="btn dropdown-toggle form-control" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                      <button class="btn dropdown-toggle form-control" type="button" id="positionDropBtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                         Buy
                                                       </button>
-                                                      <div class="dropdown-menu form-control" aria-labelledby="dropdownMenuButton">
+                                                      <div class="dropdown-menu text-center" aria-labelledby="positionDropBtn" style="right: 0;">
                                                         <a class="dropdown-item" href="#">Buy</a>
+                                                        <hr class="dropdown-divider">
                                                         <a class="dropdown-item" href="#">Sell</a>
                                                       </div>
                                                 </div>
@@ -91,15 +92,22 @@
                                             </div>
                                             <div class="col-lg-6 col-xl-6 col-md-12 col-sm-12 col-xs-12">
                                                 <div class="dropdown">
-                                                    <button class="btn dropdown-toggle form-control" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Time Frame</button>
-                                                    <div class="dropdown-menu bg-light form-control text-center" aria-labelledby="dropdownMenuButton">
+                                                    <button class="btn dropdown-toggle form-control" type="button" id="scripTimeFrameDropBtn" data-toggle="dropdown">Time Frame</button>
+                                                    <div class="dropdown-menu text-center" aria-labelledby="scripTimeFrameDropBtn" style="right: 0;">
                                                         <a class="dropdown-item" href="#">1 Minute</a>
+                                                        <hr class="dropdown-divider">
                                                         <a class="dropdown-item" href="#">3 Minute</a>
+                                                        <hr class="dropdown-divider">
                                                         <a class="dropdown-item" href="#">5 Minute</a>
+                                                        <hr class="dropdown-divider">
                                                         <a class="dropdown-item" href="#">10 Minute</a>
+                                                        <hr class="dropdown-divider">
                                                         <a class="dropdown-item" href="#">15 Minute</a>
+                                                        <hr class="dropdown-divider">
                                                         <a class="dropdown-item" href="#">30 Minute</a>
+                                                        <hr class="dropdown-divider">
                                                         <a class="dropdown-item" href="#">1 Hour</a>
+                                                        <hr class="dropdown-divider">
                                                         <a class="dropdown-item" href="#">1 Day</a>
                                                     </div>
                                                 </div>
@@ -131,14 +139,15 @@
                                         </div>
                                     </li>
                                     <li class="event" value="Exit Condition">
-                                        <div class="row mt-5">
+                                        
+                                        <div class="row mt-4">
                                             <div class="col-12">
                                                 <div class="row">
                                                     <div class="col-lg-6 col-xl-6 col-sm-12 col-xs-12 col-md-12">
-                                                        <input type="text" name="stoploss" placeholder="Stop loss %" class="form-control">
+                                                        <input type="text" name="stoploss" placeholder="Stop loss %" class="form-control stoploss">
                                                     </div>
                                                     <div class="col-lg-6 col-xl-6 col-sm-12 col-xs-12 col-md-12">
-                                                        <input type="text" name="target%" placeholder="Target %" class="form-control">
+                                                        <input type="text" name="target%" placeholder="Target %" class="form-control targetper">
                                                     </div>
                                                 </div>
                                                 <div class="row exitConditionRow mt-3">
@@ -149,6 +158,55 @@
                                                         <a href="#" class="addExitRow">Add Exit Condition(Optional)</a>
                                                     </div>
                                                 </div>
+                                                <div class="row mt-5">
+                                            <div class="col-12">
+                                                <a class="" data-toggle="collapse" href="#advanceExitCondition" role="button" aria-expanded="false" aria-controls="advanceExitCondition">Show Advanced</a>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="collapse" id="advanceExitCondition">
+                                                    <div class="row mt-4">
+                                                        <div class="col-lg-6 col-xl-6 col-md-12 col-sm-12 col-xs-12">
+                                                            <input type="text" name="Strategyname" placeholder="Start Date" class="form-control">
+                                                        </div>
+                                                        <div class="col-lg-6 col-xl-6 col-md-12 col-sm-12 col-xs-12">
+                                                            <input type="text" name="Strategyname" placeholder="Stop Date" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mt-4">
+                                                        <div class="col-lg-6 col-xl-6col-md-12 col-sm-12 col-xs-12">
+                                                            <input type="text" name="Strategyname" placeholder="Start Time" class="form-control">
+                                                        </div>
+                                                        <div class="col-lg-6 col-xl-6 col-md-12 col-sm-12 col-xs-12">
+                                                            <input type="text" name="Strategyname" placeholder="Stop Time" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mt-4">
+                                                        <div class="col-6">
+                                                            <div class="dropdown">
+                                                                <button class="btn dropdown-toggle form-control" type="button" id="positionDropBtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Candel Stick</button>
+                                                                <div class="dropdown-menu text-center" aria-labelledby="positionDropBtn" style="right: 0;">
+                                                                    <a class="dropdown-item" href="#">CandelStick</a>
+                                                                    <hr class="dropdown-divider">
+                                                                    <a class="dropdown-item" href="#">Heikin-Ashi</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="dropdown">
+                                                                <button class="btn dropdown-toggle form-control" type="button" id="positionDropBtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">MIS</button>
+                                                              <div class="dropdown-menu text-center" aria-labelledby="positionDropBtn" style="right: 0;">
+                                                                    <a class="dropdown-item" href="#">MIS</a>
+                                                                    <hr class="dropdown-divider">
+                                                                    <a class="dropdown-item" href="#">CNC/NRML</a>
+                                                              </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                             </div>   
                                         </div>
                                     </li>

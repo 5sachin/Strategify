@@ -463,18 +463,6 @@ body > div.contact-us.container.p-5 > div{
 }
 
 
-body > div > div > div.row.mt-2 > div > div{
-  overflow-x: auto;
-  white-space: nowrap;
-  display: block;
-  padding: 2rem;
-}
-
-body > div > div > div.row.mt-2 > div > div > div:nth-child(n){
-  display: inline-block;
-  float: none;
-}
-
 
 /* ------------------- END LOGIN MODAL -----------------------*/
 
@@ -666,7 +654,20 @@ body > div > div > div.row.mt-2 > div > div > div:nth-child(n){
 
 
 
+.dropdown-menu {         
+  max-height: 200px;
+  overflow-y: auto;
+}
 
+.stoploss{
+  color: #f43b51;
+  background: #fae2e5;
+}
+
+.targetper{
+  color: #06d092;
+  background-color: #d7f7ed;
+}
 
 
 
