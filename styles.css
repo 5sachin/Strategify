@@ -636,7 +636,7 @@ body > div.contact-us.container.p-5 > div{
 /*-------------------- CREATE STRATEGY -------------------------------*/
 
 
-.createStrategy input,.dropdown{
+.createStrategy input,.createStrategy .dropdown{
   border-color: transparent;
   border-bottom:2px solid #e2e2e2;
 }
