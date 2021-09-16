@@ -1,10 +1,10 @@
 
 $(document).ready(function() {
     var max_fields = 10;
-    var wrapper1 = $(".IndicatorEntry");
-    var add_button1 = $(".addIndicator");
-    var wrapper2 = $(".IndicatorEntry2");
-    var add_button2 = $(".addIndicator2");
+    var wrapper1 = $(".entryConditionRow");
+    var add_button1 = $(".addEntryRow");
+    var wrapper2 = $(".exitConditionRow");
+    var add_button2 = $(".addExitRow");
 
 
     var x = 1;
@@ -12,13 +12,13 @@ $(document).ready(function() {
         e.preventDefault();
         if (x < max_fields) {
             x++;
-            $(wrapper1).append('<div><input class="font-weight-bold form-control" placeholder="Indicator Price" type="text" name="conditionEntry2"/><a href="#" class="delete">Delete</a></div>'); //add input box
+            $(wrapper1).append('<div class="col-lg-4 col-xl-4 col-md-12 col-sm-12 col-xs-12"><input type="text" name="Strategyname" placeholder="Indicator" class="form-control"></div><div class="col-lg-3 col-xl-3 col-md-12 col-sm-12 col-xs-12"><input type="text" name="Strategyname" placeholder="Comparator" class="form-control"></div><div class="col-lg-4 col-xl-4 col-md-12 col-sm-12 col-xs-12"><input type="text" name="Strategyname" placeholder="Indicator" class="form-control"></div><div class="col-1"><span><a href="#" class="w-50 h-50" style="font-size:3rem">&times;</a></span></div>'); //add input box
         } else {
             alert('You Reached the limits')
         }
     });
 
-    $(wrapper1).on("click", ".delete", function(e) {
+    $(wrapper1).on("click", ".deleteEntryRow", function(e) {
         e.preventDefault();
         $(this).parent('div').remove();
         x--;
@@ -29,7 +29,7 @@ $(document).ready(function() {
         e.preventDefault();
         if (x < max_fields) {
             x++;
-            $(wrapper2).append('<div><input class="font-weight-bold form-control" placeholder="Indicator Price" type="text" name="conditionEntry2"/><a href="#" class="delete">Delete</a></div>'); //add input box
+            $(wrapper2).append('<div class="col-lg-4 col-xl-4 col-md-12 col-sm-12 col-xs-12"><input type="text" name="Strategyname" placeholder="Indicator" class="form-control"></div><div class="col-lg-3 col-xl-3 col-md-12 col-sm-12 col-xs-12"><input type="text" name="Strategyname" placeholder="Comparator" class="form-control"></div><div class="col-lg-4 col-xl-4 col-md-12 col-sm-12 col-xs-12"><input type="text" name="Strategyname" placeholder="Indicator" class="form-control"></div><div class="col-1"><span><a href="#" class="w-50 h-50" style="font-size:3rem">&times;</a></span></div>'); //add input box
         } else {
             alert('You Reached the limits')
         }
