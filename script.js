@@ -60,13 +60,26 @@ function closeNav() {
   document.getElementById("mySidenav").style.display = "none";
 }
 
-$('#positionDropdown a').on('click', function(){
-    $('#positionDropBtn').text($(this).html());
-    /*$('#positionDropBtn').val($(this).html());*/
-});
 
-$('#timeframeDropDown a').on('click', function(){
-    $('#scripTimeFrameDropBtn').text($(this).html());
-    /*$('#positionDropBtn').val($(this).html());*/
+var arr = ["john", "bob", "kayla", "sam", "elena", "josh", "andrew", "maria"];
+var selectValues = {
+  "1": "SBIN",
+  "2": "Reliance",
+  "3": "Titan",
+  "4": "TCS",
+  "5": "Adani",
+  "6": "Dr Reddy",
+  "7": "Titan",
+  "8": "TCS",
+  "9": "Adani",
+  "10": "Dr Reddy"
+};
+var $mySelect = $('#scripName');
+//
+$.each(selectValues, function(key, value) {
+  var $option = $("<option/>", {
+    value: key,
+    text: value
+  });
+  $mySelect.append($option);
 });
-

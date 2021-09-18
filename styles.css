@@ -636,7 +636,7 @@ body > div.contact-us.container.p-5 > div{
 /*-------------------- CREATE STRATEGY -------------------------------*/
 
 
-.createStrategy input,.createStrategy .dropdown{
+.createStrategy input,.createStrategy select{
   border-color: transparent;
   border-bottom:2px solid #e2e2e2;
 }
@@ -654,9 +654,15 @@ body > div.contact-us.container.p-5 > div{
 
 
 
-.dropdown-menu {         
+.createStrategy select option{         
   max-height: 200px;
   overflow-y: auto;
+}
+
+
+.scripDrop{
+  max-height: 200px;
+  overflow-y: auto; /* adjust height depending on number of options to display */
 }
 
 .stoploss{
@@ -795,10 +801,6 @@ body > div.contact-us.container.p-5 > div{
     left: 0;
     right: -55.8px;
 }
-
-
-
-
 
 
 

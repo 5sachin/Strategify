@@ -69,48 +69,37 @@
                                     <li class="event" value="Position">
                                         <div class="row mt-5">
                                             <div class="col-6">
-                                                <div class="dropdown">
-                                                      <button class="btn dropdown-toggle form-control" type="button" id="positionDropBtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" name="Buy">
-                                                        Buy
-                                                      </button>
-                                                      <div class="dropdown-menu text-center" aria-labelledby="positionDropBtn" id="positionDropdown" style="right: 0;">
-                                                        <a class="dropdown-item" href="#">Buy</a>
-                                                        <hr class="dropdown-divider">
-                                                        <a class="dropdown-item" href="#">Sell</a>
-                                                      </div>
-                                                </div>
+                                                <select class="form-select form-control" aria-label="Default select example" id="positionDropBtn">
+                                                        <option selected>Buy</option>
+                                                        <option value="1">Sell</option>
+                                                </select>
                                             </div>
                                             <div class="col-6">
-                                                <input type="text" name="quantityLots" placeholder="Enter Quantity in lots" class="form-control">
+                                                <input type="number" name="quantityLots" placeholder="Enter Quantity in lots" class="form-control">
                                             </div>
                                         </div>
                                     </li>
                                     <li class="event" value="Scrip">
                                         <div class="row mt-5">
                                             <div class="col-lg-6 col-xl-6 col-md-12 col-sm-12 col-xs-12">
-                                                <input type="text" name="scripName" placeholder="Add Scrip E.g SBIN" class="form-control">
+                                                <select class="form-select form-control" aria-label="Default select example" id="scripName">
+                                                    <div class="scripDrop">
+                                                        <option selected>Add Scrip E.g SBIN</option>
+                                                    </div>
+                                                </select>
                                             </div>
                                             <div class="col-lg-6 col-xl-6 col-md-12 col-sm-12 col-xs-12">
-                                                <div class="dropdown">
-                                                    <button class="btn dropdown-toggle form-control" type="button" id="scripTimeFrameDropBtn" data-toggle="dropdown">Time Frame</button>
-                                                    <div class="dropdown-menu text-center" aria-labelledby="scripTimeFrameDropBtn" id="timeframeDropDown" style="right: 0;">
-                                                        <a class="dropdown-item" href="#">1 Minute</a>
-                                                        <hr class="dropdown-divider">
-                                                        <a class="dropdown-item" href="#">3 Minute</a>
-                                                        <hr class="dropdown-divider">
-                                                        <a class="dropdown-item" href="#">5 Minute</a>
-                                                        <hr class="dropdown-divider">
-                                                        <a class="dropdown-item" href="#">10 Minute</a>
-                                                        <hr class="dropdown-divider">
-                                                        <a class="dropdown-item" href="#">15 Minute</a>
-                                                        <hr class="dropdown-divider">
-                                                        <a class="dropdown-item" href="#">30 Minute</a>
-                                                        <hr class="dropdown-divider">
-                                                        <a class="dropdown-item" href="#">1 Hour</a>
-                                                        <hr class="dropdown-divider">
-                                                        <a class="dropdown-item" href="#">1 Day</a>
-                                                    </div>
-                                                </div>
+                                                <select class="form-select form-control" aria-label="Default select example" id="scripTimeFrameDropBtn">
+                                                        <option selected>Time Frame</option>
+                                                        <option value="1">1 Minute</option>
+                                                        <option value="1">3 Minute</option>
+                                                        <option value="1">5 Minute</option>
+                                                        <option value="1">10 Minute</option>
+                                                        <option value="1">15 Minute</option>
+                                                        <option value="1">30 Minute</option>
+                                                        <option value="1">1 Hour</option>
+                                                        <option value="1">1 Day</option>
+                                                </select>
                                             </div>
                                         </div>
                                     </li>
