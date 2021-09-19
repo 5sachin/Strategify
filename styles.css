@@ -654,15 +654,9 @@ body > div.contact-us.container.p-5 > div{
 
 
 
-.createStrategy select option{         
+.scripDropDown {         
   max-height: 200px;
   overflow-y: auto;
-}
-
-
-.scripDrop{
-  max-height: 200px;
-  overflow-y: auto; /* adjust height depending on number of options to display */
 }
 
 .stoploss{

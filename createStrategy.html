@@ -82,11 +82,10 @@
                                     <li class="event" value="Scrip">
                                         <div class="row mt-5">
                                             <div class="col-lg-6 col-xl-6 col-md-12 col-sm-12 col-xs-12">
-                                                <select class="form-select form-control" aria-label="Default select example" id="scripName">
-                                                    <div class="scripDrop">
-                                                        <option selected>Add Scrip E.g SBIN</option>
-                                                    </div>
-                                                </select>
+                                                <input type="text" id="scripnName" name="scripName" placeholder="Add Scrip E.g SBIN" class="form-control" onchange="sricpDropDown(this.value)">
+                                                <div class="scripDropDown" id="scripDropDown">
+                                                    
+                                                </div>
                                             </div>
                                             <div class="col-lg-6 col-xl-6 col-md-12 col-sm-12 col-xs-12">
                                                 <select class="form-select form-control" aria-label="Default select example" id="scripTimeFrameDropBtn">

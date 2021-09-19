@@ -74,12 +74,19 @@ var selectValues = {
   "9": "Adani",
   "10": "Dr Reddy"
 };
-var $mySelect = $('#scripName');
-//
-$.each(selectValues, function(key, value) {
-  var $option = $("<option/>", {
-    value: key,
-    text: value
-  });
-  $mySelect.append($option);
-});
+
+
+function sricpDropDown(val){
+    console.log(val);
+    var scripNameString = document.getElementById("scripnName").value;
+    var scripName = arr.filter(name => name.includes(scripNameString));
+    var dispScripDrop = document.getElementById("scripDropDown");
+    
+    console.log(scripName);
+    for(let i=0;i<scripName.length;i++){
+        var div = document.createElement('div');
+        console.log(scripName[i]);
+        div.innerHTML = `<a class="dropdown-item" href="#">`+scripName[i]+`</a>`;
+        dispScripDrop.append(div);
+    }
+}
