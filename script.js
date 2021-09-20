@@ -64,6 +64,7 @@ function closeNav() {
 
 
 let suggestions = ["Relicane","SBIN","TCS","LTI","Tata Motors","Aditya Birla Capital Ltd","Ajanta Pharma Ltd","ACC Ltd","Adani Total Gas Ltd","Adani Green Energy Ltd","Adani Transmission Ltd","MRF","HDFC","Yes Bank","Adani","Titan","Bharti Airtel","Tata Steel","Infosys"];
+
 const searchWrapper = document.querySelector(".search-input");
 const inputBox = searchWrapper.querySelector("input");
 const suggBox = searchWrapper.querySelector(".autocom-box");
@@ -86,21 +87,35 @@ inputBox.onkeyup = (e)=>{
         showSuggestions(emptyArray);
         let allList = suggBox.querySelectorAll("li");
         for (let i = 0; i < allList.length; i++) {
-            allList[i].setAttribute("value", this.innerText);
-            allList[i].setAttribute("onclick", "select(this.value)");
-            
+            allList[i].setAttribute("name", "this.innerText");
+            allList[i].setAttribute("onclick", "addScripName(this.innerText)");
         }
     }else{
         searchWrapper.classList.remove("active");
     }
 }
 
-function select(element){
-    let selectData = element.textContent;
-    console.log("Oncick"+element);
-    /*inputBox.value = selectData*/
+var scripAddedContainer = document.querySelector(".addedscripList");
+function addScripName(element){
+
+    var scripAddedName = document.createElement("a");
+    scripAddedName.setAttribute("class","btn");
+    scripAddedName.setAttribute("name",element);
+    scripAddedName.innerHTML = element;
+
+    var span = document.createElement('span');
+    span.setAttribute("class","removeAddedScripName");
+    span.setAttribute("onclick","cancel('" + element + "')");
+    span.innerHTML = '&times';
+
+    scripAddedName.append(span);
+    scripAddedContainer.append(scripAddedName);
+    console.log(scripAddedContainer);
+
     searchWrapper.classList.remove("active");
 }
+
+
 
 function showSuggestions(list){
     let listData;
@@ -115,5 +130,7 @@ function showSuggestions(list){
 
 
 function cancel(val){
-    console.log(val);
+    var parent = document.getElementsByClassName(".autocom-box");
+    var child = document.getElementsByName(val);
+    parent.removeAttr(child);
 }

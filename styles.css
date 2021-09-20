@@ -687,6 +687,7 @@ body > div.contact-us.container.p-5 > div{
   padding-top: 10px 8px;
   opacity: 1;
   pointer-events: auto;
+  padding-bottom: 10px;
 }
 
 .search-input.active .autocom-box li{
