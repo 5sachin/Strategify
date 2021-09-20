@@ -654,9 +654,38 @@ body > div.contact-us.container.p-5 > div{
 
 
 
-.scripDropDown {         
-  max-height: 200px;
+
+.search-input .autocom-box{
+  padding: 10px 8px;
+  max-height: 280px;
   overflow-y: auto;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.search-input .autocom-box li{
+  list-style: none;
+  padding: 8px 12px;
+  width: 100%;
+  cursor: default;
+  border-radius: 3px;
+  z-index: 1000;
+  display: none;
+}
+
+.search-input .autocom-box li:hover{
+  background: #efefef;
+}
+
+.search-input.active .autocom-box{
+  padding-top: 10px 8px;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.search-input.active .autocom-box li{
+  color: black;
+  display: block;
 }
 
 .stoploss{

@@ -76,17 +76,49 @@ var selectValues = {
 };
 
 
-function sricpDropDown(val){
-    console.log(val);
-    var scripNameString = document.getElementById("scripnName").value;
-    var scripName = arr.filter(name => name.includes(scripNameString));
-    var dispScripDrop = document.getElementById("scripDropDown");
-    
-    console.log(scripName);
-    for(let i=0;i<scripName.length;i++){
-        var div = document.createElement('div');
-        console.log(scripName[i]);
-        div.innerHTML = `<a class="dropdown-item" href="#">`+scripName[i]+`</a>`;
-        dispScripDrop.append(div);
+let suggestion = ["Relicane","SBIN","TCS","LTI","Tata Motors","MRF"];
+const searchWrapper = document.querySelector(".search-input");
+const inputBox = searchWrapper.querySelector("input");
+const sugBox = searchWrapper.querySelector(".autocom-box");
+
+
+inputBox.onkeyup = (e)=>{
+    console.log(e.target.value);
+    let userData = e.target.value;
+    let emptyarray = [];
+    if(userData){
+        emptyarray = suggestion.filter((data)=>{
+            return data.toLocaleLowerCase().startsWith(userData.toLocaleLowerCase());
+
+        });
+
+        emptyarray = emptyarray.map((data)=>{
+            return data='<li>'+ data+'</li>';
+        });
+        searchWrapper.classList.add("active");
+        showSuggestion(emptyarray);
+        let allList = sugBox.querySelector("li");
+        for(let index =0;index<allList.length;i++){
+            allList[i].setAttribute("onclick","select(this)");
+        }
+    }else{
+        searchWrapper.classList.remove("active");
     }
+    
+}
+
+function select(element){
+    let selectUserData = element.textContent;
+    console.log(selectUserData);
+}
+
+function showSuggestion(list){
+    let listData;
+    if(!list.length){
+        userValue = inputBox.value;
+        listData = '<li>'+ userValue +'</li>';
+    }else{
+        listData = list.join('');
+    }
+    sugBox.innerHTML = listData;
 }
