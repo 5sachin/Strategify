@@ -661,8 +661,9 @@ body > div.contact-us.container.p-5 > div{
   overflow-y: auto;
   opacity: 0;
   pointer-events: none;
-  border: 2px solid #204469;
-  border-radius: 10px;
+  box-shadow: 0 8px 30px 0 rgb(0 0 0 / 15%);
+  border-radius: 2px;
+  z-index: 2000;
 }
 
 
@@ -672,8 +673,8 @@ body > div.contact-us.container.p-5 > div{
   width: 100%;
   cursor: default;
   border-radius: 3px;
-  z-index: 1000;
   display: none;
+  border-bottom: 1px solid #f3f3f3;
 }
 
 
@@ -691,6 +692,36 @@ body > div.contact-us.container.p-5 > div{
 .search-input.active .autocom-box li{
   color: black;
   display: block;
+}
+
+.addedscripList a{
+  color: #6e6e6e;
+  margin: 0 0.5rem 0.5rem 0.5rem;
+  box-shadow: 0px 6px 9.2px 0.8px rgb(195 195 195 / 24%);
+  background-color: #ffffff;
+  height: 32px;
+  display: inline-flex;
+  font-size: 0.8125rem;
+  transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  box-sizing: border-box;
+  align-items: center;
+  border-radius: 16px;
+  vertical-align: middle;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.addedscripList span{
+  height: auto;
+  float: right;
+  -webkit-tap-highlight-color: transparent;
+  fill: currentColor;
+  width: 1em;
+  display: inline-block;
+  font-size: 24px;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  user-select: none;
+  flex-shrink: 0;
 }
 
 .stoploss{
@@ -831,8 +862,9 @@ body > div.contact-us.container.p-5 > div{
 }
 
 
+.entryConditionRow{
 
-
+}
 
 /*-------------------- END CREATE STRATEGY -------------------------*/
 

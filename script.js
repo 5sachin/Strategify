@@ -76,29 +76,32 @@ inputBox.onkeyup = (e)=>{
     let userData = e.target.value;
     let emptyArray = [];
     if(userData){
-        emptyArray = suggestions.filter((data)=>{//filtering array value and user characters to lowercase and return only those words which are start with user enetered chars
+        emptyArray = suggestions.filter((data)=>{
             return data.toLocaleLowerCase().startsWith(userData.toLocaleLowerCase());
         });
         emptyArray = emptyArray.map((data)=>{
-            // passing return data inside li tag
             return data = `<li>${data}</li>`;
         });
         searchWrapper.classList.add("active");
         showSuggestions(emptyArray);
         let allList = suggBox.querySelectorAll("li");
         for (let i = 0; i < allList.length; i++) {
-            //adding onclick attribute in all li tag
-            allList[i].setAttribute("onclick", "select(this)");
+            allList[i].setAttribute("value", this.innerText);
+            allList[i].setAttribute("onclick", "select(this.value)");
+            
         }
     }else{
-        searchWrapper.classList.remove("active"); //hide autocomplete box
+        searchWrapper.classList.remove("active");
     }
 }
+
 function select(element){
     let selectData = element.textContent;
-    inputBox.value = selectData
+    console.log("Oncick"+element);
+    /*inputBox.value = selectData*/
     searchWrapper.classList.remove("active");
 }
+
 function showSuggestions(list){
     let listData;
     if(!list.length){
@@ -108,4 +111,9 @@ function showSuggestions(list){
       listData = list.join('');
     }
     suggBox.innerHTML = listData;
+}
+
+
+function cancel(val){
+    console.log(val);
 }
