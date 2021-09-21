@@ -84,6 +84,7 @@ inputBox.onkeyup = (e)=>{
             return data = `<li>${data}</li>`;
         });
         searchWrapper.classList.add("active");
+
         showSuggestions(emptyArray);
         let allList = suggBox.querySelectorAll("li");
         for (let i = 0; i < allList.length; i++) {
@@ -102,6 +103,7 @@ function addScripName(element){
     scripAddedName.setAttribute("class","btn");
     scripAddedName.setAttribute("name",element);
     scripAddedName.innerHTML = element;
+    inputBox.value ="";
 
     var span = document.createElement('span');
     span.setAttribute("class","removeAddedScripName");
