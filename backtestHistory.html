@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./././node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./././node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="././node_modules/bootstrap-social/bootstrap-social.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+	<title>BackTestResult</title>
+</head>
+<body>
+
+	<header class="page-head">
+        <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
+            <a href="#" class="navbar-brand brand">Strateigfy</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contactus.html" class="nav-link">Contact Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <img src="img_avatar.png" class="avatar dropdown-toggle" role="button" data-toggle="dropdown" id="navbarDropdown"  aria-expanded="false">
+                        <div class="dropdown-menu text-left" aria-labelledby="navbarDropdown"> 
+                            <a href="index.html" class="dropdown-item text-dark">Logout</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+
+
+
+
+    <div class="container-fluid backtestHistory">
+    	<div class="section-25 section-md-55 section-lg-75 section-xl-75 mt-5">
+            <div class="shell">
+            	<div class="range">
+            		<div class="row">
+            			<div class="col-4">
+            				<input type="text" name="startegyNameSearch" placeholder="Search Strategy"><span></span>
+            			</div>
+            		</div>
+            		<div class="row mt-5">
+            			<div class="row">
+                            <div id="accordion">
+                                <div class="card">
+                                    <div class="card-header" role="tab" id="macdheader">
+                                        <h3 class="mb-0">
+                                            <h3 data-toggle="collapse" data-target="#macd">
+                                                MACD Crossover
+                                            </h3>
+                                        </h3>    
+                                    </div>
+                                    <div class="collapse show" id="macd" data-parent="#accordion">
+                                        <div class="card-body">
+                                            <table>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">Instrument</th>
+                                                        <th scope="col">LTP</th>
+                                                        <th scope="col">Backtest P&L</th>
+                                                        <th scope="col">Wins&Losses</th>
+                                                        <th scope="col">Signals</th>
+                                                        <th scope="col">Wins</th>
+                                                        <th scope="col">Losses</th>
+                                                        <th scope="col">WS</th>
+                                                        <th scope="col">LS</th>
+                                                        <th scope="col">Max DD</th>
+                                                        <th scope="col"></th>
+                                                        <th scope="col">CheckBox</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td data-label="Account">JSW</td>
+                                                        <td data-label="Due Date">659.15(-2.67%)</td>
+                                                        <td data-label="Amount"><span class="text-success">8085</span></td>
+                                                        <td data-label="Period">
+                                                            <div class="progress bg-danger">
+                                                                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 45%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td data-label="Account">61</td>
+                                                        <td data-label="Due Date">33</td>
+                                                        <td data-label="Amount">27</td>
+                                                        <td data-label="Period">3</td>
+                                                        <td data-label="Account">3</td>
+                                                        <td data-label="Due Date">-11.9</td>
+                                                        <td data-label="Amount"><span><i class="fa fa-download"></i></span></td>
+                                                        <td data-label="Period"><input type="checkbox" name="check"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td data-label="Account">Adani</td>
+                                                        <td data-label="Due Date">293(-2.67%)</td>
+                                                        <td data-label="Amount"><span class="text-danger">23135</span></td>
+                                                        <td data-label="Period">
+                                                            <div class="progress bg-danger">
+                                                                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td data-label="Account">51</td>
+                                                        <td data-label="Due Date">23</td>
+                                                        <td data-label="Amount">16</td>
+                                                        <td data-label="Period">6</td>
+                                                        <td data-label="Account">5</td>
+                                                        <td data-label="Due Date">-34.1</td>
+                                                        <td data-label="Amount"><span><i class="fa fa-download"></i></span></td>
+                                                        <td data-label="Period"><input type="checkbox" name="check"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td data-label="Account">Reliance</td>
+                                                        <td data-label="Due Date">293(-2.67%)</td>
+                                                        <td data-label="Amount"><span class="text-danger">23135</span></td>
+                                                        <td data-label="Period">
+                                                            <div class="progress bg-danger">
+                                                                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 65%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td data-label="Account">51</td>
+                                                        <td data-label="Due Date">23</td>
+                                                        <td data-label="Amount">16</td>
+                                                        <td data-label="Period">6</td>
+                                                        <td data-label="Account">5</td>
+                                                        <td data-label="Due Date">-34.1</td>
+                                                        <td data-label="Amount"><span><i class="fa fa-download"></i></span></td>
+                                                        <td data-label="Period"><input type="checkbox" name="check"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td data-label="Account">TCS</td>
+                                                        <td data-label="Due Date">293(-2.67%)</td>
+                                                        <td data-label="Amount"><span class="text-danger">23135</span></td>
+                                                        <td data-label="Period">
+                                                            <div class="progress bg-danger">
+                                                                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td data-label="Account">51</td>
+                                                        <td data-label="Due Date">23</td>
+                                                        <td data-label="Amount">16</td>
+                                                        <td data-label="Period">6</td>
+                                                        <td data-label="Account">5</td>
+                                                        <td data-label="Due Date">-34.1</td>
+                                                        <td data-label="Amount"><span><i class="fa fa-download"></i></span></td>
+                                                        <td data-label="Period"><input type="checkbox" name="check"></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" role="tab" id="rsaheader">
+                                        <h3 class="mb-0">
+                                            <h3 data-toggle="collapse" data-target="#rsa">
+                                                RSA
+                                            </h3>
+                                        </h3>    
+                                    </div>
+                                    <div class="collapse show" id="rsa" data-parent="#accordion">
+                                        <div class="card-body">
+                                            <table>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">Instrument</th>
+                                                        <th scope="col">LTP</th>
+                                                        <th scope="col">Backtest P&L</th>
+                                                        <th scope="col">Wins&Losses</th>
+                                                        <th scope="col">Signals</th>
+                                                        <th scope="col">Wins</th>
+                                                        <th scope="col">Losses</th>
+                                                        <th scope="col">WS</th>
+                                                        <th scope="col">LS</th>
+                                                        <th scope="col">Max DD</th>
+                                                        <th scope="col"></th>
+                                                        <th scope="col">CheckBox</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td data-label="Account">JSW</td>
+                                                        <td data-label="Due Date">659.15(-2.67%)</td>
+                                                        <td data-label="Amount"><span class="text-success">8085</span></td>
+                                                        <td data-label="Period">
+                                                            <div class="progress bg-danger">
+                                                                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 45%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td data-label="Account">61</td>
+                                                        <td data-label="Due Date">33</td>
+                                                        <td data-label="Amount">27</td>
+                                                        <td data-label="Period">3</td>
+                                                        <td data-label="Account">3</td>
+                                                        <td data-label="Due Date">-11.9</td>
+                                                        <td data-label="Amount"><span><i class="fa fa-download"></i></span></td>
+                                                        <td data-label="Period"><input type="checkbox" name="check"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td data-label="Account">Tatamotors</td>
+                                                        <td data-label="Due Date">293(-2.67%)</td>
+                                                        <td data-label="Amount"><span class="text-danger">23135</span></td>
+                                                        <td data-label="Period">
+                                                            <div class="progress bg-danger">
+                                                                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td data-label="Account">51</td>
+                                                        <td data-label="Due Date">23</td>
+                                                        <td data-label="Amount">16</td>
+                                                        <td data-label="Period">6</td>
+                                                        <td data-label="Account">5</td>
+                                                        <td data-label="Due Date">-34.1</td>
+                                                        <td data-label="Amount"><span><i class="fa fa-download"></i></span></td>
+                                                        <td data-label="Period"><input type="checkbox" name="check"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td data-label="Account">Adani</td>
+                                                        <td data-label="Due Date">293(-2.67%)</td>
+                                                        <td data-label="Amount"><span class="text-danger">23135</span></td>
+                                                        <td data-label="Period">
+                                                            <div class="progress bg-danger">
+                                                                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 65%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td data-label="Account">51</td>
+                                                        <td data-label="Due Date">23</td>
+                                                        <td data-label="Amount">16</td>
+                                                        <td data-label="Period">6</td>
+                                                        <td data-label="Account">5</td>
+                                                        <td data-label="Due Date">-34.1</td>
+                                                        <td data-label="Amount"><span><i class="fa fa-download"></i></span></td>
+                                                        <td data-label="Period"><input type="checkbox" name="check"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td data-label="Account">Adani</td>
+                                                        <td data-label="Due Date">293(-2.67%)</td>
+                                                        <td data-label="Amount"><span class="text-danger">23135</span></td>
+                                                        <td data-label="Period">
+                                                            <div class="progress bg-danger">
+                                                                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td data-label="Account">51</td>
+                                                        <td data-label="Due Date">23</td>
+                                                        <td data-label="Amount">16</td>
+                                                        <td data-label="Period">6</td>
+                                                        <td data-label="Account">5</td>
+                                                        <td data-label="Due Date">-34.1</td>
+                                                        <td data-label="Amount"><span><i class="fa fa-download"></i></span></td>
+                                                        <td data-label="Period"><input type="checkbox" name="check"></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            		</div>
+            	</div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <footer class="container-fluid mt-5">
+        <div class="row p-2">
+            <div class="col-12 text-center p-2 m-auto">
+                <h3>&copy Copyright: Strategify.</h3>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./script.js"></script>
+
+</body>
+</html>
