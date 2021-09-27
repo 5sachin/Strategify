@@ -47,7 +47,7 @@
 
 
 
-    <div class="container-fluid backtestHistory">
+    <!-- <div class="container-fluid backtestHistory">
     	<div class="section-25 section-md-55 section-lg-75 section-xl-75 mt-5">
             <div class="shell">
             	<div class="range">
@@ -197,7 +197,7 @@
                                                 </thead>
                                                 <tbody>
                                                     <tr>
-                                                        <td data-label="Account">JSW</td>
+                                                        <td data-label="Instrument">JSW</td>
                                                         <td data-label="Due Date">659.15(-2.67%)</td>
                                                         <td data-label="Amount"><span class="text-success">8085</span></td>
                                                         <td data-label="Period">
@@ -283,12 +283,223 @@
             	</div>
             </div>
         </div>
+    </div> -->
+
+
+
+    <div class="container-fluid backtestHistory">
+        <div class="section-25 section-md-55 section-lg-75 section-xl-75 mt-5">
+            <div class="shell">
+                <div class="range">
+                    <div class="row">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <table class="table">
+                                    <thead class="table">
+                                        <tr>
+                                            <th scope="col">Instrument</th>
+                                            <th scope="col">LTP</th>
+                                            <th scope="col">Backtest P&L</th>
+                                            <th scope="col">Wins&Losses</th>
+                                            <th scope="col">Signals</th>
+                                            <th scope="col">Wins</th>
+                                            <th scope="col">Losses</th>
+                                            <th scope="col">WS</th>
+                                            <th scope="col">LS</th>
+                                            <th scope="col">Max DD</th>
+                                            <th scope="col"></th>
+                                            <th scope="col">CheckBox</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr data-toggle="collapse" data-target="#demo1" class="accordion-toggle">
+                                            <td data-label="Account">JSW</td>
+                                            <td data-label="Due Date">659.15(-2.67%)</td>
+                                            <td data-label="Amount"><span class="text-danger">885</span></td>
+                                            <td data-label="Period">
+                                                <div class="progress bg-danger">
+                                                    <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 45%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td data-label="Account">61</td>
+                                            <td data-label="Due Date">33</td>
+                                            <td data-label="Amount">27</td>
+                                            <td data-label="Period">3</td>
+                                            <td data-label="Account">3</td>
+                                            <td data-label="Due Date">-11.9</td>
+                                            <td data-label="Amount"><span><i class="fa fa-download"></i></span></td>
+                                            <td data-label="Period"><input type="checkbox" name="check"></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="12" class="hiddenRow">
+                                                <div class="accordian-body collapse" id="demo1"> 
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-6">
+                                                                <img src="cardHeadImg.jpg">
+                                                            </div>
+                                                            <div class="col-3 backtestHistorySecondC">
+                                                                <div class="backtestHistorySecondCF">
+                                                                    <span class="backtestHistorySecondCF1">Total no of Signal</span>
+                                                                    <span class="backtestHistorySecondCF2">51</span>
+                                                                </div>
+                                                                <div class="backtestHistorySecondCF">
+                                                                    <span class="backtestHistorySecondCF1">No of Wins</span>
+                                                                    <span class="backtestHistorySecondCF2">51</span>
+                                                                </div>
+                                                                <div class="backtestHistorySecondCF">
+                                                                    <span class="backtestHistorySecondCF1">No of Losses</span>
+                                                                    <span class="backtestHistorySecondCF2">51</span>
+                                                                </div>
+                                                                <div class="backtestHistorySecondCF">
+                                                                    <span class="backtestHistorySecondCF1">Winning Streak</span>
+                                                                    <span class="backtestHistorySecondCF2">51</span>
+                                                                </div>
+                                                                <div class="backtestHistorySecondCF">
+                                                                    <span class="backtestHistorySecondCF1">Lossing Streak</span>
+                                                                    <span class="backtestHistorySecondCF2">51</span>
+                                                                </div>
+                                                                <div class="backtestHistorySecondCF">
+                                                                    <span class="backtestHistorySecondCF1">Max Gain</span>
+                                                                    <span class="backtestHistorySecondCF2">51</span>
+                                                                </div>
+                                                                <div class="backtestHistorySecondCF">
+                                                                    <span class="backtestHistorySecondCF1">Max Loss</span>
+                                                                    <span class="backtestHistorySecondCF2">51</span>
+                                                                </div>
+                                                                <div class="backtestHistorySecondCF">
+                                                                    <span class="backtestHistorySecondCF1">Average gain</span>
+                                                                    <span class="backtestHistorySecondCF2">51</span>
+                                                                </div>
+                                                                <div class="backtestHistorySecondCF">
+                                                                    <span class="backtestHistorySecondCF1">Average Loss</span>
+                                                                    <span class="backtestHistorySecondCF2">51</span>
+                                                                </div>
+                                                                <div class="backtestHistorySecondCF">
+                                                                    <span class="backtestHistorySecondCF1">Max Drawdown</span>
+                                                                    <span class="backtestHistorySecondCF2">51</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-3 backtestHistoryThirdC">
+                                                                <div class="backtestHistoryThirdCF">
+                                                                    <span class="backtestHistoryThirdCF1">Period High</span>
+                                                                    <span class="backtestHistoryThirdCF2">776.0</span>
+                                                                </div>
+                                                                <div class="backtestHistoryThirdCF">
+                                                                    <span class="backtestHistoryThirdCF1">Period Low</span>
+                                                                    <span class="backtestHistoryThirdCF2">257</span>
+                                                                </div>
+                                                                <div class="backtestHistoryThirdCF">
+                                                                    <span class="backtestHistoryThirdCF1">Period Return</span>
+                                                                    <span class="backtestHistoryThirdCF2">144.5%</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div> 
+                                            </td>
+                                        </tr>
+
+                                        <tr data-toggle="collapse" data-target="#demo2" class="accordion-toggle">
+                                            <td data-label="Account">Tata Steel</td>
+                                            <td data-label="Due Date">500.15(-2.67%)</td>
+                                            <td data-label="Amount"><span class="text-success">200</span></td>
+                                            <td data-label="Period">
+                                                <div class="progress bg-danger">
+                                                    <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td data-label="Account">80</td>
+                                            <td data-label="Due Date">52</td>
+                                            <td data-label="Amount">27</td>
+                                            <td data-label="Period">4</td>
+                                            <td data-label="Account">25</td>
+                                            <td data-label="Due Date">-25.9</td>
+                                            <td data-label="Amount"><span><i class="fa fa-download"></i></span></td>
+                                            <td data-label="Period"><input type="checkbox" name="check"></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="12" class="hiddenRow">
+                                                <div class="accordian-body collapse" id="demo2"> 
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-6">
+                                                                <img src="cardHeadImg.jpg">
+                                                            </div>
+                                                            <div class="col-3 backtestHistorySecondC">
+                                                                <div class="backtestHistorySecondCF">
+                                                                    <span class="backtestHistorySecondCF1">Total no of Signal</span>
+                                                                    <span class="backtestHistorySecondCF2">81</span>
+                                                                </div>
+                                                                <div class="backtestHistorySecondCF">
+                                                                    <span class="backtestHistorySecondCF1">No of Wins</span>
+                                                                    <span class="backtestHistorySecondCF2">11</span>
+                                                                </div>
+                                                                <div class="backtestHistorySecondCF">
+                                                                    <span class="backtestHistorySecondCF1">No of Losses</span>
+                                                                    <span class="backtestHistorySecondCF2">71</span>
+                                                                </div>
+                                                                <div class="backtestHistorySecondCF">
+                                                                    <span class="backtestHistorySecondCF1">Winning Streak</span>
+                                                                    <span class="backtestHistorySecondCF2">5</span>
+                                                                </div>
+                                                                <div class="backtestHistorySecondCF">
+                                                                    <span class="backtestHistorySecondCF1">Lossing Streak</span>
+                                                                    <span class="backtestHistorySecondCF2">5</span>
+                                                                </div>
+                                                                <div class="backtestHistorySecondCF">
+                                                                    <span class="backtestHistorySecondCF1">Max Gain</span>
+                                                                    <span class="backtestHistorySecondCF2">51</span>
+                                                                </div>
+                                                                <div class="backtestHistorySecondCF">
+                                                                    <span class="backtestHistorySecondCF1">Max Loss</span>
+                                                                    <span class="backtestHistorySecondCF2">10</span>
+                                                                </div>
+                                                                <div class="backtestHistorySecondCF">
+                                                                    <span class="backtestHistorySecondCF1">Average gain</span>
+                                                                    <span class="backtestHistorySecondCF2">11</span>
+                                                                </div>
+                                                                <div class="backtestHistorySecondCF">
+                                                                    <span class="backtestHistorySecondCF1">Average Loss</span>
+                                                                    <span class="backtestHistorySecondCF2">521</span>
+                                                                </div>
+                                                                <div class="backtestHistorySecondCF">
+                                                                    <span class="backtestHistorySecondCF1">Max Drawdown</span>
+                                                                    <span class="backtestHistorySecondCF2">1</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-3 backtestHistoryThirdC">
+                                                                <div class="backtestHistoryThirdCF">
+                                                                    <span class="backtestHistoryThirdCF1">Period High</span>
+                                                                    <span class="backtestHistoryThirdCF2">776.0</span>
+                                                                </div>
+                                                                <div class="backtestHistoryThirdCF">
+                                                                    <span class="backtestHistoryThirdCF1">Period Low</span>
+                                                                    <span class="backtestHistoryThirdCF2">257</span>
+                                                                </div>
+                                                                <div class="backtestHistoryThirdCF">
+                                                                    <span class="backtestHistoryThirdCF1">Period Return</span>
+                                                                    <span class="backtestHistoryThirdCF2">144.5%</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div> 
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-
-
-
-    <footer class="container-fluid mt-5">
+    <footer class="container-fluid mt-5 fixed-bottom">
         <div class="row p-2">
             <div class="col-12 text-center p-2 m-auto">
                 <h3>&copy Copyright: Strategify.</h3>

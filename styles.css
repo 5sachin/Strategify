@@ -928,9 +928,13 @@ table caption {
 }
 
 table tr {
-  background-color: #f8f8f8;
+  
   border: 1px solid #ddd;
   padding: .35em;
+}
+
+table tr:hover{
+  background-color: #f8f8f8;
 }
 
 table th,
@@ -945,57 +949,71 @@ table th {
   text-transform: uppercase;
 }
 
-@media screen and (max-width: 600px) {
-  table {
-    border: 0;
-  }
 
-  table caption {
-    font-size: 1.3em;
-  }
-  
-  table thead {
-    border: none;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-  }
-  
-  table tr {
-    border-bottom: 3px solid #ddd;
-    display: block;
-    margin-bottom: .625em;
-  }
-  
-  table td {
-    border-bottom: 1px solid #ddd;
-    display: block;
-    font-size: .8em;
-    text-align: right;
-  }
-  
-  table td::before {
-    /*
-    * aria-label has no advantage, it won't be read inside a table
-    content: attr(aria-label);
-    */
-    content: attr(data-label);
-    float: left;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-  
-  table td:last-child {
-    border-bottom: 0;
-  }
+
+
+.hiddenRow {
+    padding: 0 !important;
+}
+
+.backtestHistorySecondC{
+  flex: 3;
+    padding: 12px 30px 0;
+    margin-left: 2rem;
+    border-left: 1px solid #989898;
+    border-right: 1px solid #989898;
+}
+
+.backtestHistorySecondCF{
+    display: flex;
+    flex-direction: row;
 }
 
 
+.backtestHistorySecondCF1{
+  flex: 2;
+  color: #9ea1a4;
+  padding: 0.4rem 0;
+  font-weight: 400;
+  text-align: left;
+}
 
+
+.backtestHistorySecondCF2{
+  flex: 1;
+  color: #383838;
+  padding: 0.4rem 0;
+  font-weight: 400;
+}
+
+
+.backtestHistoryThirdC{
+  flex: 3;
+    padding: 12px 30px 0;
+    margin-left: 2rem;
+}
+
+.backtestHistoryThirdCF{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.backtestHistoryThirdCF1{
+  flex: 2;
+  color: #9ea1a4;
+  padding: 0.4rem 0;
+  font-weight: 400;
+  text-align: left;
+}
+
+
+.backtestHistoryThirdCF2{
+  flex: 1;
+  color: #383838;
+  padding: 0.4rem 0;
+  font-weight: 400;
+}
 
 
 
